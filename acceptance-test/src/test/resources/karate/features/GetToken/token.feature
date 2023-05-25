@@ -5,7 +5,7 @@ Feature: Get token
     * def token = null
     * def login_data = read('classpath:data/login.json')
 
-  Scenario: Get authentication token
+  Scenario: get authentication token
 
     Given path '/api/auth/login'
     And request login_data[0]

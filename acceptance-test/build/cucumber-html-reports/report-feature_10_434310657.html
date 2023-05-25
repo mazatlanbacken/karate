@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: karate/features/Stadiums/get_by_id.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>acceptance test</td>
+      <td>23 may. 2023, 15:52</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">karate/features/Stadiums/get_by_id.feature</td>
+          <td      class="passed"    >12</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">12</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="809467501">0.809</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">karate/features/Stadiums/get_by_id.feature</span>
+
+
+</div>
+
+        <div class="description indention">Get Stadium by ID</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url urlBase</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:51:20.964 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_775193864.html">@positiveCase</a>
+</div>
+
+
+  <span class="lead-duration duration">0.451</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get Stadium by ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path '/api/stadiums', '8b0893d0-e399-11ed-8794-f58efb359f9b'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.446</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>15:51:20.969 request:
+1 &gt; GET https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/stadiums/8b0893d0-e399-11ed-8794-f58efb359f9b
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+1 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:51:21.415 response time in milliseconds: 446
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 6836
+1 &lt; Connection: keep-alive
+1 &lt; Date: Tue, 23 May 2023 20:51:21 GMT
+1 &lt; x-amzn-RequestId: c729b235-cc07-47b7-9468-537816a62b50
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 6836
+1 &lt; x-amz-apigw-id: FZMTgEW_iYcFhhw=
+1 &lt; etag: W/&quot;1ab4-pWk51KQwMpP5Wlmkc2DN/7L0EVU&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-646d2749-1e3e688d5d4f6e9a76e8aa2b;Sampled=0;lineage=1a7c2e09:0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 9c616eaf86921af6212cb1fc8e4f14aa.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-P1
+1 &lt; X-Amz-Cf-Id: UlT0D4BGRql6d0osJRHdnX68SvVN8qgn1Bkgbaqt5uYlytpyuDbjhQ==
+{&quot;status&quot;:true,&quot;data&quot;:{&quot;id&quot;:&quot;8b0893d0-e399-11ed-8794-f58efb359f9b&quot;,&quot;infographic_url&quot;:&quot;https://cdn.whiz.pe/api/v2/image/fa8a7b7f-79ba-4adf-baec-36c0cb8ddc39/png&quot;,&quot;text_first_es&quot;:&quot;&lt;p&gt;En 2017 iniciaron las obras de construcci&oacute;n de un estadio de f&uacute;tbol en la ciudad de Mazatl&aacute;n como parte de un proyecto de construcci&oacute;n y modernizaci&oacute;n de diversos recintos deportivos en el estado de Sinaloa. Siendo este recinto el &uacute;nico de nueva creaci&oacute;n dentro de las obras incluidas en el proyecto, en el cual se modernizaron los estadios Banorte de Culiac&aacute;n; Teodoro Mariscal de Mazatl&aacute;n y el Estadio Emilio Ibarra Almada de Los Mochis.&#8203;&lt;br&gt;Desde 2017 se busc&oacute; conseguir un equipo de f&uacute;tbol profesional para ocupar el nuevo recinto, puesto que no exist&iacute;a un club que tuviera como sede la ciudad. En ese mismo a&ntilde;o se fund&oacute; el Pacific F&uacute;tbol Club, el cual pertenec&iacute;a al Grupo Faharo, due&ntilde;os de Murci&eacute;lagos F&uacute;tbol Club,11&#8203; no obstante, durante sus primeros torneos de existencia el equipo tuvo como sede temporal la ciudad de Los Mochis. Ser&iacute;a hasta enero de 2019 cuando el Pacific lleg&oacute; al puerto, teniendo como sede el Estadio Teodoro Mariscal, dedicado a la pr&aacute;ctica del b&eacute;isbol. Sin embargo, este club solamente jugar&iacute;a durante unos cuantos meses en la ciudad, puesto que para la temporada 2019-2020 el club solicit&oacute; permiso para no competir en la Serie A de M&eacute;xico con el objetivo de conseguir una franquicia para disputar una liga de mayor categor&iacute;a.&lt;/p&gt;&quot;,&quot;text_first_en&quot;:&quot;&lt;p&gt;En 2017 iniciaron las obras de construcci&oacute;n de un estadio de f&uacute;tbol en la ciudad de Mazatl&aacute;n como parte de un proyecto de construcci&oacute;n y modernizaci&oacute;n de diversos recintos deportivos en el estado de Sinaloa. Siendo este recinto el &uacute;nico de nueva creaci&oacute;n dentro de las obras incluidas en el proyecto, en el cual se modernizaron los estadios Banorte de Culiac&aacute;n; Teodoro Mariscal de Mazatl&aacute;n y el Estadio Emilio Ibarra Almada de Los Mochis.&#8203;&lt;br&gt;Desde 2017 se busc&oacute; conseguir un equipo de f&uacute;tbol profesional para ocupar el nuevo recinto, puesto que no exist&iacute;a un club que tuviera como sede la ciudad. En ese mismo a&ntilde;o se fund&oacute; el Pacific F&uacute;tbol Club, el cual pertenec&iacute;a al Grupo Faharo, due&ntilde;os de Murci&eacute;lagos F&uacute;tbol Club,11&#8203; no obstante, durante sus primeros torneos de existencia el equipo tuvo como sede temporal la ciudad de Los Mochis. Ser&iacute;a hasta enero de 2019 cuando el Pacific lleg&oacute; al puerto, teniendo como sede el Estadio Teodoro Mariscal, dedicado a la pr&aacute;ctica del b&eacute;isbol. Sin embargo, este club solamente jugar&iacute;a durante unos cuantos meses en la ciudad, puesto que para la temporada 2019-2020 el club solicit&oacute; permiso para no competir en la Serie A de M&eacute;xico con el objetivo de conseguir una franquicia para disputar una liga de mayor categor&iacute;a.&lt;/p&gt;&quot;,&quot;stadium_image_url&quot;:&quot;https://cdn.whiz.pe/api/v2/image/116bb429-b50c-4329-b619-94b12eace04c/jpg&quot;,&quot;address_es&quot;:&quot;Pandera Dorada, Mazatl&aacute;n Sinaloa.&quot;,&quot;address_en&quot;:&quot;Pandera Dorada, Mazatl&aacute;n Sinaloa.&quot;,&quot;capacity&quot;:21000,&quot;text_second_es&quot;:&quot;&lt;p&gt;En 2020 se aceleraron los trabajos de construcci&oacute;n del estadio con el objetivo de tenerlo listo antes del inicio de la temporada futbol&iacute;stica 2020-2021. Finalmente, el 2 de junio se confirm&oacute; la llegada de un nuevo equipo para el recinto, el club Monarcas Morelia fue trasladado desde Michoac&aacute;n, y pas&oacute; llamarse Mazatl&aacute;n F&uacute;tbol Club. El estadio fue llamado de manera provisional como Estadio de Mazatl&aacute;n.&lt;br&gt;El 7 de julio de 2020 tras un tuit de la cuenta oficial del Mazatl&aacute;n FC se dio a conocer que el estadio recibir&aacute; como segundo nombre 'El Kraken', sin embargo, este nombre no es reconocido de manera oficial por la Federaci&oacute;n Mexicana de F&uacute;tbol, y es visto &uacute;nicamente como una denominaci&oacute;n comercial y administrativa por parte del club. El 23 de julio se celebr&oacute; un acto para celebrar la apertura del estadio con un concierto a cargo de la Banda El Recodo, agrupaci&oacute;n local y patrocinador oficial del Mazatl&aacute;n F.C.&lt;br&gt;El 27 de julio de 2020 se disput&oacute; el primer partido en la historia del estadio, con un encuentro entre el Mazatl&aacute;n F&uacute;tbol Club y el Club Puebla correspondiente a la jornada 1 del Torneo Guard1anes 2020, el marcador finaliz&oacute; con una victoria por 1-4 en favor del equipo poblano, el primer gol anotado en este recinto fue marcado por el jugador Santiago Orme&ntilde;o.&#8203; El partido inaugural del recinto se jug&oacute; a puerta cerrada debido a las medidas sanitarias provocadas por la pandemia de coronavirus.&lt;br&gt;El 16 de octubre de 2020 se disput&oacute; el primer partido con p&uacute;blico en el estadio, en esa ocasi&oacute;n 6,000 espectadores pudieron asistir al encuentro entre el Mazatl&aacute;n y el F&uacute;tbol Club Ju&aacute;rez. El 19 de marzo de 2021 se registr&oacute; la mayor entrada hasta el momento en el estadio, cuando 10,159 aficionados asistieron al encuentro entre el Mazatl&aacute;n F.C. y el Club Am&eacute;rica.&lt;/p&gt;&quot;,&quot;text_second_en&quot;:&quot;&lt;p&gt;En 2020 se aceleraron los trabajos de construcci&oacute;n del estadio con el objetivo de tenerlo listo antes del inicio de la temporada futbol&iacute;stica 2020-2021. Finalmente, el 2 de junio se confirm&oacute; la llegada de un nuevo equipo para el recinto, el club Monarcas Morelia fue trasladado desde Michoac&aacute;n, y pas&oacute; llamarse Mazatl&aacute;n F&uacute;tbol Club. El estadio fue llamado de manera provisional como Estadio de Mazatl&aacute;n.&lt;br&gt;El 7 de julio de 2020 tras un tuit de la cuenta oficial del Mazatl&aacute;n FC se dio a conocer que el estadio recibir&aacute; como segundo nombre 'El Kraken', sin embargo, este nombre no es reconocido de manera oficial por la Federaci&oacute;n Mexicana de F&uacute;tbol, y es visto &uacute;nicamente como una denominaci&oacute;n comercial y administrativa por parte del club. El 23 de julio se celebr&oacute; un acto para celebrar la apertura del estadio con un concierto a cargo de la Banda El Recodo, agrupaci&oacute;n local y patrocinador oficial del Mazatl&aacute;n F.C.&lt;br&gt;El 27 de julio de 2020 se disput&oacute; el primer partido en la historia del estadio, con un encuentro entre el Mazatl&aacute;n F&uacute;tbol Club y el Club Puebla correspondiente a la jornada 1 del Torneo Guard1anes 2020, el marcador finaliz&oacute; con una victoria por 1-4 en favor del equipo poblano, el primer gol anotado en este recinto fue marcado por el jugador Santiago Orme&ntilde;o.&#8203; El partido inaugural del recinto se jug&oacute; a puerta cerrada debido a las medidas sanitarias provocadas por la pandemia de coronavirus.&lt;br&gt;El 16 de octubre de 2020 se disput&oacute; el primer partido con p&uacute;blico en el estadio, en esa ocasi&oacute;n 6,000 espectadores pudieron asistir al encuentro entre el Mazatl&aacute;n y el F&uacute;tbol Club Ju&aacute;rez. El 19 de marzo de 2021 se registr&oacute; la mayor entrada hasta el momento en el estadio, cuando 10,159 aficionados asistieron al encuentro entre el Mazatl&aacute;n F.C. y el Club Am&eacute;rica.&lt;/p&gt;&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-04-25T18:46:52.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T18:46:52.000Z&quot;,&quot;deleted_at&quot;:null}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.id == '8b0893d0-e399-11ed-8794-f58efb359f9b'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print karate.pretty(response)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:51:21.417 [print] {
+  &quot;status&quot;: true,
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;8b0893d0-e399-11ed-8794-f58efb359f9b&quot;,
+    &quot;infographic_url&quot;: &quot;https://cdn.whiz.pe/api/v2/image/fa8a7b7f-79ba-4adf-baec-36c0cb8ddc39/png&quot;,
+    &quot;text_first_es&quot;: &quot;&lt;p&gt;En 2017 iniciaron las obras de construcci&oacute;n de un estadio de f&uacute;tbol en la ciudad de Mazatl&aacute;n como parte de un proyecto de construcci&oacute;n y modernizaci&oacute;n de diversos recintos deportivos en el estado de Sinaloa. Siendo este recinto el &uacute;nico de nueva creaci&oacute;n dentro de las obras incluidas en el proyecto, en el cual se modernizaron los estadios Banorte de Culiac&aacute;n; Teodoro Mariscal de Mazatl&aacute;n y el Estadio Emilio Ibarra Almada de Los Mochis.\u200B&lt;br&gt;Desde 2017 se busc&oacute; conseguir un equipo de f&uacute;tbol profesional para ocupar el nuevo recinto, puesto que no exist&iacute;a un club que tuviera como sede la ciudad. En ese mismo a&ntilde;o se fund&oacute; el Pacific F&uacute;tbol Club, el cual pertenec&iacute;a al Grupo Faharo, due&ntilde;os de Murci&eacute;lagos F&uacute;tbol Club,11\u200B no obstante, durante sus primeros torneos de existencia el equipo tuvo como sede temporal la ciudad de Los Mochis. Ser&iacute;a hasta enero de 2019 cuando el Pacific lleg&oacute; al puerto, teniendo como sede el Estadio Teodoro Mariscal, dedicado a la pr&aacute;ctica del b&eacute;isbol. Sin embargo, este club solamente jugar&iacute;a durante unos cuantos meses en la ciudad, puesto que para la temporada 2019-2020 el club solicit&oacute; permiso para no competir en la Serie A de M&eacute;xico con el objetivo de conseguir una franquicia para disputar una liga de mayor categor&iacute;a.&lt;/p&gt;&quot;,
+    &quot;text_first_en&quot;: &quot;&lt;p&gt;En 2017 iniciaron las obras de construcci&oacute;n de un estadio de f&uacute;tbol en la ciudad de Mazatl&aacute;n como parte de un proyecto de construcci&oacute;n y modernizaci&oacute;n de diversos recintos deportivos en el estado de Sinaloa. Siendo este recinto el &uacute;nico de nueva creaci&oacute;n dentro de las obras incluidas en el proyecto, en el cual se modernizaron los estadios Banorte de Culiac&aacute;n; Teodoro Mariscal de Mazatl&aacute;n y el Estadio Emilio Ibarra Almada de Los Mochis.\u200B&lt;br&gt;Desde 2017 se busc&oacute; conseguir un equipo de f&uacute;tbol profesional para ocupar el nuevo recinto, puesto que no exist&iacute;a un club que tuviera como sede la ciudad. En ese mismo a&ntilde;o se fund&oacute; el Pacific F&uacute;tbol Club, el cual pertenec&iacute;a al Grupo Faharo, due&ntilde;os de Murci&eacute;lagos F&uacute;tbol Club,11\u200B no obstante, durante sus primeros torneos de existencia el equipo tuvo como sede temporal la ciudad de Los Mochis. Ser&iacute;a hasta enero de 2019 cuando el Pacific lleg&oacute; al puerto, teniendo como sede el Estadio Teodoro Mariscal, dedicado a la pr&aacute;ctica del b&eacute;isbol. Sin embargo, este club solamente jugar&iacute;a durante unos cuantos meses en la ciudad, puesto que para la temporada 2019-2020 el club solicit&oacute; permiso para no competir en la Serie A de M&eacute;xico con el objetivo de conseguir una franquicia para disputar una liga de mayor categor&iacute;a.&lt;/p&gt;&quot;,
+    &quot;stadium_image_url&quot;: &quot;https://cdn.whiz.pe/api/v2/image/116bb429-b50c-4329-b619-94b12eace04c/jpg&quot;,
+    &quot;address_es&quot;: &quot;Pandera Dorada, Mazatl&aacute;n Sinaloa.&quot;,
+    &quot;address_en&quot;: &quot;Pandera Dorada, Mazatl&aacute;n Sinaloa.&quot;,
+    &quot;capacity&quot;: 21000,
+    &quot;text_second_es&quot;: &quot;&lt;p&gt;En 2020 se aceleraron los trabajos de construcci&oacute;n del estadio con el objetivo de tenerlo listo antes del inicio de la temporada futbol&iacute;stica 2020-2021. Finalmente, el 2 de junio se confirm&oacute; la llegada de un nuevo equipo para el recinto, el club Monarcas Morelia fue trasladado desde Michoac&aacute;n, y pas&oacute; llamarse Mazatl&aacute;n F&uacute;tbol Club. El estadio fue llamado de manera provisional como Estadio de Mazatl&aacute;n.&lt;br&gt;El 7 de julio de 2020 tras un tuit de la cuenta oficial del Mazatl&aacute;n FC se dio a conocer que el estadio recibir&aacute; como segundo nombre 'El Kraken', sin embargo, este nombre no es reconocido de manera oficial por la Federaci&oacute;n Mexicana de F&uacute;tbol, y es visto &uacute;nicamente como una denominaci&oacute;n comercial y administrativa por parte del club. El 23 de julio se celebr&oacute; un acto para celebrar la apertura del estadio con un concierto a cargo de la Banda El Recodo, agrupaci&oacute;n local y patrocinador oficial del Mazatl&aacute;n F.C.&lt;br&gt;El 27 de julio de 2020 se disput&oacute; el primer partido en la historia del estadio, con un encuentro entre el Mazatl&aacute;n F&uacute;tbol Club y el Club Puebla correspondiente a la jornada 1 del Torneo Guard1anes 2020, el marcador finaliz&oacute; con una victoria por 1-4 en favor del equipo poblano, el primer gol anotado en este recinto fue marcado por el jugador Santiago Orme&ntilde;o.\u200B El partido inaugural del recinto se jug&oacute; a puerta cerrada debido a las medidas sanitarias provocadas por la pandemia de coronavirus.&lt;br&gt;El 16 de octubre de 2020 se disput&oacute; el primer partido con p&uacute;blico en el estadio, en esa ocasi&oacute;n 6,000 espectadores pudieron asistir al encuentro entre el Mazatl&aacute;n y el F&uacute;tbol Club Ju&aacute;rez. El 19 de marzo de 2021 se registr&oacute; la mayor entrada hasta el momento en el estadio, cuando 10,159 aficionados asistieron al encuentro entre el Mazatl&aacute;n F.C. y el Club Am&eacute;rica.&lt;/p&gt;&quot;,
+    &quot;text_second_en&quot;: &quot;&lt;p&gt;En 2020 se aceleraron los trabajos de construcci&oacute;n del estadio con el objetivo de tenerlo listo antes del inicio de la temporada futbol&iacute;stica 2020-2021. Finalmente, el 2 de junio se confirm&oacute; la llegada de un nuevo equipo para el recinto, el club Monarcas Morelia fue trasladado desde Michoac&aacute;n, y pas&oacute; llamarse Mazatl&aacute;n F&uacute;tbol Club. El estadio fue llamado de manera provisional como Estadio de Mazatl&aacute;n.&lt;br&gt;El 7 de julio de 2020 tras un tuit de la cuenta oficial del Mazatl&aacute;n FC se dio a conocer que el estadio recibir&aacute; como segundo nombre 'El Kraken', sin embargo, este nombre no es reconocido de manera oficial por la Federaci&oacute;n Mexicana de F&uacute;tbol, y es visto &uacute;nicamente como una denominaci&oacute;n comercial y administrativa por parte del club. El 23 de julio se celebr&oacute; un acto para celebrar la apertura del estadio con un concierto a cargo de la Banda El Recodo, agrupaci&oacute;n local y patrocinador oficial del Mazatl&aacute;n F.C.&lt;br&gt;El 27 de julio de 2020 se disput&oacute; el primer partido en la historia del estadio, con un encuentro entre el Mazatl&aacute;n F&uacute;tbol Club y el Club Puebla correspondiente a la jornada 1 del Torneo Guard1anes 2020, el marcador finaliz&oacute; con una victoria por 1-4 en favor del equipo poblano, el primer gol anotado en este recinto fue marcado por el jugador Santiago Orme&ntilde;o.\u200B El partido inaugural del recinto se jug&oacute; a puerta cerrada debido a las medidas sanitarias provocadas por la pandemia de coronavirus.&lt;br&gt;El 16 de octubre de 2020 se disput&oacute; el primer partido con p&uacute;blico en el estadio, en esa ocasi&oacute;n 6,000 espectadores pudieron asistir al encuentro entre el Mazatl&aacute;n y el F&uacute;tbol Club Ju&aacute;rez. El 19 de marzo de 2021 se registr&oacute; la mayor entrada hasta el momento en el estadio, cuando 10,159 aficionados asistieron al encuentro entre el Mazatl&aacute;n F.C. y el Club Am&eacute;rica.&lt;/p&gt;&quot;,
+    &quot;latitude&quot;: &quot;-12.117129&quot;,
+    &quot;longitude&quot;: &quot;-76.998995&quot;,
+    &quot;created_at&quot;: &quot;2023-04-25T18:46:52.000Z&quot;,
+    &quot;updated_at&quot;: &quot;2023-04-25T18:46:52.000Z&quot;,
+    &quot;deleted_at&quot;: null
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url urlBase</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>15:51:21.418 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_944601412.html">@negativeCase</a>
+</div>
+
+
+  <span class="lead-duration duration">0.358</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get stadium with incorrect ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path '/api/stadiums', '8b0893d0-e399-11ed-8794-f58efb359f9'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.357</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>15:51:21.420 request:
+1 &gt; GET https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/stadiums/8b0893d0-e399-11ed-8794-f58efb359f9
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+1 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:51:21.776 response time in milliseconds: 356
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Connection: keep-alive
+1 &lt; Date: Tue, 23 May 2023 20:51:21 GMT
+1 &lt; x-amzn-RequestId: ea0009fc-e0a6-4673-98bb-3b99041e25bd
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 27
+1 &lt; x-amz-apigw-id: FZMTkEa_iYcFqhw=
+1 &lt; etag: W/&quot;1b-BQ4wsTbGhkgrMnOKvzDkIbXIV3Q&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-646d2749-3d48daa6034937ab12ea005a;Sampled=0;lineage=1a7c2e09:0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 2d421cb55f565ff4c38cbaaf0ba2f1a2.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-P1
+1 &lt; X-Amz-Cf-Id: QJDCHeeL1hvzOgy4fD9gkDDXlnVhLgr9Ex31coLHFkBSXjHc3ogluA==
+{&quot;status&quot;:true,&quot;data&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data == null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print karate.pretty(response)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>15:51:21.777 [print] {
+  &quot;status&quot;: true,
+  &quot;data&quot;: null
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

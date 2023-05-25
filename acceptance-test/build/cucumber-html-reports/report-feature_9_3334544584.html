@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: karate/features/Stadiums/all.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>acceptance test</td>
+      <td>23 may. 2023, 15:52</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">karate/features/Stadiums/all.feature</td>
+          <td      class="passed"    >6</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">6</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="584093584">0.584</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">karate/features/Stadiums/all.feature</span>
+
+
+</div>
+
+        <div class="description indention">Get all stadiums</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url urlBase</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:51:18.189 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_775193864.html">@positiveCase</a>
+</div>
+
+
+  <span class="lead-duration duration">0.584</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get all stadiums</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/stadiums'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.575</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>15:51:18.192 request:
+1 &gt; GET https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/stadiums
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+1 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:51:18.766 response time in milliseconds: 572
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 32359
+1 &lt; Connection: keep-alive
+1 &lt; Date: Tue, 23 May 2023 20:51:18 GMT
+1 &lt; x-amzn-RequestId: 5eb93261-34d4-4dda-b3b4-0cb79f62d748
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 32359
+1 &lt; x-amz-apigw-id: FZMTEGvUiYcF5_A=
+1 &lt; etag: W/&quot;7e67-EbuUI91rQuou7UjQpRaCAYJgtoI&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-646d2746-6375dec932857797751a9c6f;Sampled=0;lineage=1a7c2e09:0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 2e8010b39acc99d1371b96a5f3d32b6a.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-P1
+1 &lt; X-Amz-Cf-Id: Z9xnXoa35Jw_IswBpwvbbvPgskJYy9_DwLDEU14ZxC9yPIWpSgCL1A==
+{&quot;status&quot;:true,&quot;data&quot;:[{&quot;id&quot;:&quot;02e097a0-f4d8-11ed-9c5f-d75058c37cdc&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T17:26:51.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T15:51:03.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;03980b40-f32c-11ed-a29e-f3d0487b1e0e&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-15T14:23:08.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-15T14:23:08.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;0b7b8c00-f12a-11ed-8f72-174ace12e1c5&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T01:04:00.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T01:04:00.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;0dd37d20-ef66-11ed-83d5-b7240538aeac&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-10T19:08:31.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-10T19:08:31.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;108a4be0-f12b-11ed-8fef-75abeedfe5b3&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T01:11:18.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T01:11:18.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;13a8d0b0-f65f-11ed-9c51-eb9985bea257&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T16:06:13.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T16:07:18.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;24e2fd50-f002-11ed-8c95-b1bcb9c1bd5b&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-11T13:45:51.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-11T13:45:51.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;2ce743e0-f38f-11ed-841e-1f8ce5c5b108&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-16T02:12:57.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-16T02:12:57.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;2e8dcc80-f643-11ed-a578-93bb7932b6bd&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T12:46:32.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T12:46:32.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;4060f610-f4ce-11ed-835c-ebec7c342add&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;&quot;,&quot;capacity&quot;:1,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T16:16:59.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-17T16:16:59.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;407635d0-f12b-11ed-8fef-75abeedfe5b3&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T01:12:38.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T01:12:38.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;426391f0-f4d0-11ed-b9a2-6511e7b4ba1d&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T16:31:22.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-17T16:31:22.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;4905fb10-f4da-11ed-956a-075317fa3e7f&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T17:43:08.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-17T17:43:08.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;498d10f0-f4d0-11ed-b9a2-6511e7b4ba1d&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T16:31:34.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-17T16:31:34.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;4fca1ab0-f65d-11ed-8a92-f34ca3430ec2&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T15:53:34.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T15:53:34.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;5d35db10-f65f-11ed-9c51-eb9985bea257&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T16:08:16.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T16:08:16.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;5d5bab80-f01d-11ed-b700-23b29852db19&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-11T17:00:42.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-11T17:00:42.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;5eb62890-f3e5-11ed-82e0-dd506be8c32d&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-16T12:29:58.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-16T12:29:58.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;634f4df0-f4d0-11ed-b9a2-6511e7b4ba1d&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;&quot;,&quot;capacity&quot;:1,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;-3.000000&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T16:32:17.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-17T16:32:17.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;6a1740a0-f01d-11ed-b700-23b29852db19&quot;,&quot;infographic_url&quot;:&quot;&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-11T17:01:04.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-11T17:01:04.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;6ffb4a50-f4de-11ed-a25b-d765d0f6c283&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T18:12:51.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-17T18:12:51.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;71bae060-f017-11ed-9046-b16b5f12ba2c&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-11T16:18:20.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-11T16:18:20.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;76b0a7c0-f01d-11ed-b700-23b29852db19&quot;,&quot;infographic_url&quot;:&quot;fdfs&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;fdf&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-11T17:01:25.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-11T17:01:25.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;7a6c04f0-f666-11ed-a5af-37b2ea11880d&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemploupdate&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T16:59:11.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T16:59:14.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;7c948760-f01d-11ed-b700-23b29852db19&quot;,&quot;infographic_url&quot;:&quot;fdfs&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;fdf&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:0,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-11T17:01:35.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-11T17:01:35.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;7fcc3e20-f4d0-11ed-b9a2-6511e7b4ba1d&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;&quot;,&quot;text_first_en&quot;:&quot;&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;&quot;,&quot;address_en&quot;:&quot;&quot;,&quot;capacity&quot;:1,&quot;text_second_es&quot;:&quot;&quot;,&quot;text_second_en&quot;:&quot;&quot;,&quot;latitude&quot;:&quot;-76.998995&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T16:33:05.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-17T16:33:05.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;886324c0-f12b-11ed-8fef-75abeedfe5b3&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T01:14:39.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T01:14:39.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;8b0893d0-e399-11ed-8794-f58efb359f9b&quot;,&quot;infographic_url&quot;:&quot;https://cdn.whiz.pe/api/v2/image/fa8a7b7f-79ba-4adf-baec-36c0cb8ddc39/png&quot;,&quot;text_first_es&quot;:&quot;&lt;p&gt;En 2017 iniciaron las obras de construcci&oacute;n de un estadio de f&uacute;tbol en la ciudad de Mazatl&aacute;n como parte de un proyecto de construcci&oacute;n y modernizaci&oacute;n de diversos recintos deportivos en el estado de Sinaloa. Siendo este recinto el &uacute;nico de nueva creaci&oacute;n dentro de las obras incluidas en el proyecto, en el cual se modernizaron los estadios Banorte de Culiac&aacute;n; Teodoro Mariscal de Mazatl&aacute;n y el Estadio Emilio Ibarra Almada de Los Mochis.&#8203;&lt;br&gt;Desde 2017 se busc&oacute; conseguir un equipo de f&uacute;tbol profesional para ocupar el nuevo recinto, puesto que no exist&iacute;a un club que tuviera como sede la ciudad. En ese mismo a&ntilde;o se fund&oacute; el Pacific F&uacute;tbol Club, el cual pertenec&iacute;a al Grupo Faharo, due&ntilde;os de Murci&eacute;lagos F&uacute;tbol Club,11&#8203; no obstante, durante sus primeros torneos de existencia el equipo tuvo como sede temporal la ciudad de Los Mochis. Ser&iacute;a hasta enero de 2019 cuando el Pacific lleg&oacute; al puerto, teniendo como sede el Estadio Teodoro Mariscal, dedicado a la pr&aacute;ctica del b&eacute;isbol. Sin embargo, este club solamente jugar&iacute;a durante unos cuantos meses en la ciudad, puesto que para la temporada 2019-2020 el club solicit&oacute; permiso para no competir en la Serie A de M&eacute;xico con el objetivo de conseguir una franquicia para disputar una liga de mayor categor&iacute;a.&lt;/p&gt;&quot;,&quot;text_first_en&quot;:&quot;&lt;p&gt;En 2017 iniciaron las obras de construcci&oacute;n de un estadio de f&uacute;tbol en la ciudad de Mazatl&aacute;n como parte de un proyecto de construcci&oacute;n y modernizaci&oacute;n de diversos recintos deportivos en el estado de Sinaloa. Siendo este recinto el &uacute;nico de nueva creaci&oacute;n dentro de las obras incluidas en el proyecto, en el cual se modernizaron los estadios Banorte de Culiac&aacute;n; Teodoro Mariscal de Mazatl&aacute;n y el Estadio Emilio Ibarra Almada de Los Mochis.&#8203;&lt;br&gt;Desde 2017 se busc&oacute; conseguir un equipo de f&uacute;tbol profesional para ocupar el nuevo recinto, puesto que no exist&iacute;a un club que tuviera como sede la ciudad. En ese mismo a&ntilde;o se fund&oacute; el Pacific F&uacute;tbol Club, el cual pertenec&iacute;a al Grupo Faharo, due&ntilde;os de Murci&eacute;lagos F&uacute;tbol Club,11&#8203; no obstante, durante sus primeros torneos de existencia el equipo tuvo como sede temporal la ciudad de Los Mochis. Ser&iacute;a hasta enero de 2019 cuando el Pacific lleg&oacute; al puerto, teniendo como sede el Estadio Teodoro Mariscal, dedicado a la pr&aacute;ctica del b&eacute;isbol. Sin embargo, este club solamente jugar&iacute;a durante unos cuantos meses en la ciudad, puesto que para la temporada 2019-2020 el club solicit&oacute; permiso para no competir en la Serie A de M&eacute;xico con el objetivo de conseguir una franquicia para disputar una liga de mayor categor&iacute;a.&lt;/p&gt;&quot;,&quot;stadium_image_url&quot;:&quot;https://cdn.whiz.pe/api/v2/image/116bb429-b50c-4329-b619-94b12eace04c/jpg&quot;,&quot;address_es&quot;:&quot;Pandera Dorada, Mazatl&aacute;n Sinaloa.&quot;,&quot;address_en&quot;:&quot;Pandera Dorada, Mazatl&aacute;n Sinaloa.&quot;,&quot;capacity&quot;:21000,&quot;text_second_es&quot;:&quot;&lt;p&gt;En 2020 se aceleraron los trabajos de construcci&oacute;n del estadio con el objetivo de tenerlo listo antes del inicio de la temporada futbol&iacute;stica 2020-2021. Finalmente, el 2 de junio se confirm&oacute; la llegada de un nuevo equipo para el recinto, el club Monarcas Morelia fue trasladado desde Michoac&aacute;n, y pas&oacute; llamarse Mazatl&aacute;n F&uacute;tbol Club. El estadio fue llamado de manera provisional como Estadio de Mazatl&aacute;n.&lt;br&gt;El 7 de julio de 2020 tras un tuit de la cuenta oficial del Mazatl&aacute;n FC se dio a conocer que el estadio recibir&aacute; como segundo nombre 'El Kraken', sin embargo, este nombre no es reconocido de manera oficial por la Federaci&oacute;n Mexicana de F&uacute;tbol, y es visto &uacute;nicamente como una denominaci&oacute;n comercial y administrativa por parte del club. El 23 de julio se celebr&oacute; un acto para celebrar la apertura del estadio con un concierto a cargo de la Banda El Recodo, agrupaci&oacute;n local y patrocinador oficial del Mazatl&aacute;n F.C.&lt;br&gt;El 27 de julio de 2020 se disput&oacute; el primer partido en la historia del estadio, con un encuentro entre el Mazatl&aacute;n F&uacute;tbol Club y el Club Puebla correspondiente a la jornada 1 del Torneo Guard1anes 2020, el marcador finaliz&oacute; con una victoria por 1-4 en favor del equipo poblano, el primer gol anotado en este recinto fue marcado por el jugador Santiago Orme&ntilde;o.&#8203; El partido inaugural del recinto se jug&oacute; a puerta cerrada debido a las medidas sanitarias provocadas por la pandemia de coronavirus.&lt;br&gt;El 16 de octubre de 2020 se disput&oacute; el primer partido con p&uacute;blico en el estadio, en esa ocasi&oacute;n 6,000 espectadores pudieron asistir al encuentro entre el Mazatl&aacute;n y el F&uacute;tbol Club Ju&aacute;rez. El 19 de marzo de 2021 se registr&oacute; la mayor entrada hasta el momento en el estadio, cuando 10,159 aficionados asistieron al encuentro entre el Mazatl&aacute;n F.C. y el Club Am&eacute;rica.&lt;/p&gt;&quot;,&quot;text_second_en&quot;:&quot;&lt;p&gt;En 2020 se aceleraron los trabajos de construcci&oacute;n del estadio con el objetivo de tenerlo listo antes del inicio de la temporada futbol&iacute;stica 2020-2021. Finalmente, el 2 de junio se confirm&oacute; la llegada de un nuevo equipo para el recinto, el club Monarcas Morelia fue trasladado desde Michoac&aacute;n, y pas&oacute; llamarse Mazatl&aacute;n F&uacute;tbol Club. El estadio fue llamado de manera provisional como Estadio de Mazatl&aacute;n.&lt;br&gt;El 7 de julio de 2020 tras un tuit de la cuenta oficial del Mazatl&aacute;n FC se dio a conocer que el estadio recibir&aacute; como segundo nombre 'El Kraken', sin embargo, este nombre no es reconocido de manera oficial por la Federaci&oacute;n Mexicana de F&uacute;tbol, y es visto &uacute;nicamente como una denominaci&oacute;n comercial y administrativa por parte del club. El 23 de julio se celebr&oacute; un acto para celebrar la apertura del estadio con un concierto a cargo de la Banda El Recodo, agrupaci&oacute;n local y patrocinador oficial del Mazatl&aacute;n F.C.&lt;br&gt;El 27 de julio de 2020 se disput&oacute; el primer partido en la historia del estadio, con un encuentro entre el Mazatl&aacute;n F&uacute;tbol Club y el Club Puebla correspondiente a la jornada 1 del Torneo Guard1anes 2020, el marcador finaliz&oacute; con una victoria por 1-4 en favor del equipo poblano, el primer gol anotado en este recinto fue marcado por el jugador Santiago Orme&ntilde;o.&#8203; El partido inaugural del recinto se jug&oacute; a puerta cerrada debido a las medidas sanitarias provocadas por la pandemia de coronavirus.&lt;br&gt;El 16 de octubre de 2020 se disput&oacute; el primer partido con p&uacute;blico en el estadio, en esa ocasi&oacute;n 6,000 espectadores pudieron asistir al encuentro entre el Mazatl&aacute;n y el F&uacute;tbol Club Ju&aacute;rez. El 19 de marzo de 2021 se registr&oacute; la mayor entrada hasta el momento en el estadio, cuando 10,159 aficionados asistieron al encuentro entre el Mazatl&aacute;n F.C. y el Club Am&eacute;rica.&lt;/p&gt;&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-04-25T18:46:52.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T18:46:52.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;8c01d610-f65f-11ed-9c51-eb9985bea257&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T16:09:34.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T16:09:35.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;8d5c91d0-f664-11ed-8d3d-29473b8a6f9f&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T16:45:24.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T16:45:27.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;8da9fb30-f4c7-11ed-abae-875255b3acc7&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T15:29:03.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-17T15:29:03.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;8e30a320-f642-11ed-a578-93bb7932b6bd&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T12:42:03.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T12:42:03.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;9904cdb0-f12b-11ed-8fef-75abeedfe5b3&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T01:15:07.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T01:15:07.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;992cef20-f12b-11ed-8fef-75abeedfe5b3&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T01:15:07.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T01:15:07.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;aac2b7a0-f442-11ed-a1b3-7fdde98aa8ba&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-16T23:37:48.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-16T23:37:48.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;ab7dcf30-f4cf-11ed-b9a2-6511e7b4ba1d&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T16:27:09.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-17T16:27:09.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;afc6c410-f05c-11ed-8c95-b1bcb9c1bd5b&quot;,&quot;infographic_url&quot;:&quot;fdfs&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;fdf&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-12T00:33:59.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-12T00:33:59.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;b1851e60-f137-11ed-8d65-71aa50dc077a&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T02:41:42.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T02:41:42.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;b2b55880-f05c-11ed-8c95-b1bcb9c1bd5b&quot;,&quot;infographic_url&quot;:&quot;fdfs&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;fdf&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:-1,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-12T00:34:04.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-12T00:34:04.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;b3211d80-f64d-11ed-8de0-d599255c9095&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T14:01:49.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T14:01:49.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;be7ecb20-f65f-11ed-9c51-eb9985bea257&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T16:10:59.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T16:11:20.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;bf101170-f137-11ed-8d65-71aa50dc077a&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T02:42:04.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T02:42:04.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;bfdb40f0-f89b-11ed-9df3-43711099196e&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-22T12:25:34.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-22T12:25:34.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;d6caed10-f134-11ed-b17c-8d6148bcc205&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T02:21:16.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T02:21:16.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;d7108190-f134-11ed-b17c-8d6148bcc205&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T02:21:16.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T02:21:16.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;e560e380-f642-11ed-a578-93bb7932b6bd&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T12:44:29.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T12:44:29.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;e62c8a60-f662-11ed-8d3d-29473b8a6f9f&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T16:33:34.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T16:33:34.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;e7210580-f38e-11ed-841e-1f8ce5c5b108&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-16T02:11:00.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-16T02:11:00.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;f1c84290-f32b-11ed-a29e-f3d0487b1e0e&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-15T14:22:38.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-15T14:22:38.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;f3e94d60-f134-11ed-b17c-8d6148bcc205&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:-1,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T02:22:05.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T02:22:05.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;f538a050-f4cf-11ed-b9a2-6511e7b4ba1d&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-17T16:29:12.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-17T16:29:12.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;f972cdd0-f65f-11ed-9c51-eb9985bea257&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T16:12:38.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T16:51:29.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;f978a460-f134-11ed-b17c-8d6148bcc205&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:-1,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-13T02:22:14.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T02:22:14.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;fd386480-f663-11ed-8d3d-29473b8a6f9f&quot;,&quot;infographic_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;text_first_es&quot;:&quot;ejemplo&quot;,&quot;text_first_en&quot;:&quot;ejemplo&quot;,&quot;stadium_image_url&quot;:&quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,&quot;address_es&quot;:&quot;ejemplo&quot;,&quot;address_en&quot;:&quot;ejemplo&quot;,&quot;capacity&quot;:1333,&quot;text_second_es&quot;:&quot;ejemplo&quot;,&quot;text_second_en&quot;:&quot;ejemplo&quot;,&quot;latitude&quot;:&quot;-12.117129&quot;,&quot;longitude&quot;:&quot;-76.998995&quot;,&quot;created_at&quot;:&quot;2023-05-19T16:41:22.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-19T16:41:22.000Z&quot;,&quot;deleted_at&quot;:null}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print karate.pretty(response)</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:51:18.775 [print] {
+  &quot;status&quot;: true,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;02e097a0-f4d8-11ed-9c5f-d75058c37cdc&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T17:26:51.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T15:51:03.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;03980b40-f32c-11ed-a29e-f3d0487b1e0e&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-15T14:23:08.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-15T14:23:08.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0b7b8c00-f12a-11ed-8f72-174ace12e1c5&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T01:04:00.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T01:04:00.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0dd37d20-ef66-11ed-83d5-b7240538aeac&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-10T19:08:31.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-10T19:08:31.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;108a4be0-f12b-11ed-8fef-75abeedfe5b3&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T01:11:18.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T01:11:18.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;13a8d0b0-f65f-11ed-9c51-eb9985bea257&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T16:06:13.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T16:07:18.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;24e2fd50-f002-11ed-8c95-b1bcb9c1bd5b&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-11T13:45:51.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-11T13:45:51.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;2ce743e0-f38f-11ed-841e-1f8ce5c5b108&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-16T02:12:57.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-16T02:12:57.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;2e8dcc80-f643-11ed-a578-93bb7932b6bd&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T12:46:32.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T12:46:32.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;4060f610-f4ce-11ed-835c-ebec7c342add&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;&quot;,
+      &quot;capacity&quot;: 1,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T16:16:59.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-17T16:16:59.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;407635d0-f12b-11ed-8fef-75abeedfe5b3&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T01:12:38.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T01:12:38.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;426391f0-f4d0-11ed-b9a2-6511e7b4ba1d&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T16:31:22.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-17T16:31:22.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;4905fb10-f4da-11ed-956a-075317fa3e7f&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T17:43:08.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-17T17:43:08.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;498d10f0-f4d0-11ed-b9a2-6511e7b4ba1d&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T16:31:34.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-17T16:31:34.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;4fca1ab0-f65d-11ed-8a92-f34ca3430ec2&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T15:53:34.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T15:53:34.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;5d35db10-f65f-11ed-9c51-eb9985bea257&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T16:08:16.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T16:08:16.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;5d5bab80-f01d-11ed-b700-23b29852db19&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-11T17:00:42.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-11T17:00:42.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;5eb62890-f3e5-11ed-82e0-dd506be8c32d&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-16T12:29:58.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-16T12:29:58.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;634f4df0-f4d0-11ed-b9a2-6511e7b4ba1d&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;&quot;,
+      &quot;capacity&quot;: 1,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;&quot;,
+      &quot;latitude&quot;: &quot;-3.000000&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T16:32:17.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-17T16:32:17.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;6a1740a0-f01d-11ed-b700-23b29852db19&quot;,
+      &quot;infographic_url&quot;: &quot;&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-11T17:01:04.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-11T17:01:04.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;6ffb4a50-f4de-11ed-a25b-d765d0f6c283&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T18:12:51.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-17T18:12:51.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;71bae060-f017-11ed-9046-b16b5f12ba2c&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-11T16:18:20.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-11T16:18:20.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;76b0a7c0-f01d-11ed-b700-23b29852db19&quot;,
+      &quot;infographic_url&quot;: &quot;fdfs&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;fdf&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-11T17:01:25.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-11T17:01:25.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;7a6c04f0-f666-11ed-a5af-37b2ea11880d&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemploupdate&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T16:59:11.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T16:59:14.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;7c948760-f01d-11ed-b700-23b29852db19&quot;,
+      &quot;infographic_url&quot;: &quot;fdfs&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;fdf&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 0,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-11T17:01:35.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-11T17:01:35.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;7fcc3e20-f4d0-11ed-b9a2-6511e7b4ba1d&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;&quot;,
+      &quot;text_first_en&quot;: &quot;&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;&quot;,
+      &quot;address_en&quot;: &quot;&quot;,
+      &quot;capacity&quot;: 1,
+      &quot;text_second_es&quot;: &quot;&quot;,
+      &quot;text_second_en&quot;: &quot;&quot;,
+      &quot;latitude&quot;: &quot;-76.998995&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T16:33:05.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-17T16:33:05.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;886324c0-f12b-11ed-8fef-75abeedfe5b3&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T01:14:39.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T01:14:39.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;8b0893d0-e399-11ed-8794-f58efb359f9b&quot;,
+      &quot;infographic_url&quot;: &quot;https://cdn.whiz.pe/api/v2/image/fa8a7b7f-79ba-4adf-baec-36c0cb8ddc39/png&quot;,
+      &quot;text_first_es&quot;: &quot;&lt;p&gt;En 2017 iniciaron las obras de construcci&oacute;n de un estadio de f&uacute;tbol en la ciudad de Mazatl&aacute;n como parte de un proyecto de construcci&oacute;n y modernizaci&oacute;n de diversos recintos deportivos en el estado de Sinaloa. Siendo este recinto el &uacute;nico de nueva creaci&oacute;n dentro de las obras incluidas en el proyecto, en el cual se modernizaron los estadios Banorte de Culiac&aacute;n; Teodoro Mariscal de Mazatl&aacute;n y el Estadio Emilio Ibarra Almada de Los Mochis.\u200B&lt;br&gt;Desde 2017 se busc&oacute; conseguir un equipo de f&uacute;tbol profesional para ocupar el nuevo recinto, puesto que no exist&iacute;a un club que tuviera como sede la ciudad. En ese mismo a&ntilde;o se fund&oacute; el Pacific F&uacute;tbol Club, el cual pertenec&iacute;a al Grupo Faharo, due&ntilde;os de Murci&eacute;lagos F&uacute;tbol Club,11\u200B no obstante, durante sus primeros torneos de existencia el equipo tuvo como sede temporal la ciudad de Los Mochis. Ser&iacute;a hasta enero de 2019 cuando el Pacific lleg&oacute; al puerto, teniendo como sede el Estadio Teodoro Mariscal, dedicado a la pr&aacute;ctica del b&eacute;isbol. Sin embargo, este club solamente jugar&iacute;a durante unos cuantos meses en la ciudad, puesto que para la temporada 2019-2020 el club solicit&oacute; permiso para no competir en la Serie A de M&eacute;xico con el objetivo de conseguir una franquicia para disputar una liga de mayor categor&iacute;a.&lt;/p&gt;&quot;,
+      &quot;text_first_en&quot;: &quot;&lt;p&gt;En 2017 iniciaron las obras de construcci&oacute;n de un estadio de f&uacute;tbol en la ciudad de Mazatl&aacute;n como parte de un proyecto de construcci&oacute;n y modernizaci&oacute;n de diversos recintos deportivos en el estado de Sinaloa. Siendo este recinto el &uacute;nico de nueva creaci&oacute;n dentro de las obras incluidas en el proyecto, en el cual se modernizaron los estadios Banorte de Culiac&aacute;n; Teodoro Mariscal de Mazatl&aacute;n y el Estadio Emilio Ibarra Almada de Los Mochis.\u200B&lt;br&gt;Desde 2017 se busc&oacute; conseguir un equipo de f&uacute;tbol profesional para ocupar el nuevo recinto, puesto que no exist&iacute;a un club que tuviera como sede la ciudad. En ese mismo a&ntilde;o se fund&oacute; el Pacific F&uacute;tbol Club, el cual pertenec&iacute;a al Grupo Faharo, due&ntilde;os de Murci&eacute;lagos F&uacute;tbol Club,11\u200B no obstante, durante sus primeros torneos de existencia el equipo tuvo como sede temporal la ciudad de Los Mochis. Ser&iacute;a hasta enero de 2019 cuando el Pacific lleg&oacute; al puerto, teniendo como sede el Estadio Teodoro Mariscal, dedicado a la pr&aacute;ctica del b&eacute;isbol. Sin embargo, este club solamente jugar&iacute;a durante unos cuantos meses en la ciudad, puesto que para la temporada 2019-2020 el club solicit&oacute; permiso para no competir en la Serie A de M&eacute;xico con el objetivo de conseguir una franquicia para disputar una liga de mayor categor&iacute;a.&lt;/p&gt;&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://cdn.whiz.pe/api/v2/image/116bb429-b50c-4329-b619-94b12eace04c/jpg&quot;,
+      &quot;address_es&quot;: &quot;Pandera Dorada, Mazatl&aacute;n Sinaloa.&quot;,
+      &quot;address_en&quot;: &quot;Pandera Dorada, Mazatl&aacute;n Sinaloa.&quot;,
+      &quot;capacity&quot;: 21000,
+      &quot;text_second_es&quot;: &quot;&lt;p&gt;En 2020 se aceleraron los trabajos de construcci&oacute;n del estadio con el objetivo de tenerlo listo antes del inicio de la temporada futbol&iacute;stica 2020-2021. Finalmente, el 2 de junio se confirm&oacute; la llegada de un nuevo equipo para el recinto, el club Monarcas Morelia fue trasladado desde Michoac&aacute;n, y pas&oacute; llamarse Mazatl&aacute;n F&uacute;tbol Club. El estadio fue llamado de manera provisional como Estadio de Mazatl&aacute;n.&lt;br&gt;El 7 de julio de 2020 tras un tuit de la cuenta oficial del Mazatl&aacute;n FC se dio a conocer que el estadio recibir&aacute; como segundo nombre 'El Kraken', sin embargo, este nombre no es reconocido de manera oficial por la Federaci&oacute;n Mexicana de F&uacute;tbol, y es visto &uacute;nicamente como una denominaci&oacute;n comercial y administrativa por parte del club. El 23 de julio se celebr&oacute; un acto para celebrar la apertura del estadio con un concierto a cargo de la Banda El Recodo, agrupaci&oacute;n local y patrocinador oficial del Mazatl&aacute;n F.C.&lt;br&gt;El 27 de julio de 2020 se disput&oacute; el primer partido en la historia del estadio, con un encuentro entre el Mazatl&aacute;n F&uacute;tbol Club y el Club Puebla correspondiente a la jornada 1 del Torneo Guard1anes 2020, el marcador finaliz&oacute; con una victoria por 1-4 en favor del equipo poblano, el primer gol anotado en este recinto fue marcado por el jugador Santiago Orme&ntilde;o.\u200B El partido inaugural del recinto se jug&oacute; a puerta cerrada debido a las medidas sanitarias provocadas por la pandemia de coronavirus.&lt;br&gt;El 16 de octubre de 2020 se disput&oacute; el primer partido con p&uacute;blico en el estadio, en esa ocasi&oacute;n 6,000 espectadores pudieron asistir al encuentro entre el Mazatl&aacute;n y el F&uacute;tbol Club Ju&aacute;rez. El 19 de marzo de 2021 se registr&oacute; la mayor entrada hasta el momento en el estadio, cuando 10,159 aficionados asistieron al encuentro entre el Mazatl&aacute;n F.C. y el Club Am&eacute;rica.&lt;/p&gt;&quot;,
+      &quot;text_second_en&quot;: &quot;&lt;p&gt;En 2020 se aceleraron los trabajos de construcci&oacute;n del estadio con el objetivo de tenerlo listo antes del inicio de la temporada futbol&iacute;stica 2020-2021. Finalmente, el 2 de junio se confirm&oacute; la llegada de un nuevo equipo para el recinto, el club Monarcas Morelia fue trasladado desde Michoac&aacute;n, y pas&oacute; llamarse Mazatl&aacute;n F&uacute;tbol Club. El estadio fue llamado de manera provisional como Estadio de Mazatl&aacute;n.&lt;br&gt;El 7 de julio de 2020 tras un tuit de la cuenta oficial del Mazatl&aacute;n FC se dio a conocer que el estadio recibir&aacute; como segundo nombre 'El Kraken', sin embargo, este nombre no es reconocido de manera oficial por la Federaci&oacute;n Mexicana de F&uacute;tbol, y es visto &uacute;nicamente como una denominaci&oacute;n comercial y administrativa por parte del club. El 23 de julio se celebr&oacute; un acto para celebrar la apertura del estadio con un concierto a cargo de la Banda El Recodo, agrupaci&oacute;n local y patrocinador oficial del Mazatl&aacute;n F.C.&lt;br&gt;El 27 de julio de 2020 se disput&oacute; el primer partido en la historia del estadio, con un encuentro entre el Mazatl&aacute;n F&uacute;tbol Club y el Club Puebla correspondiente a la jornada 1 del Torneo Guard1anes 2020, el marcador finaliz&oacute; con una victoria por 1-4 en favor del equipo poblano, el primer gol anotado en este recinto fue marcado por el jugador Santiago Orme&ntilde;o.\u200B El partido inaugural del recinto se jug&oacute; a puerta cerrada debido a las medidas sanitarias provocadas por la pandemia de coronavirus.&lt;br&gt;El 16 de octubre de 2020 se disput&oacute; el primer partido con p&uacute;blico en el estadio, en esa ocasi&oacute;n 6,000 espectadores pudieron asistir al encuentro entre el Mazatl&aacute;n y el F&uacute;tbol Club Ju&aacute;rez. El 19 de marzo de 2021 se registr&oacute; la mayor entrada hasta el momento en el estadio, cuando 10,159 aficionados asistieron al encuentro entre el Mazatl&aacute;n F.C. y el Club Am&eacute;rica.&lt;/p&gt;&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T18:46:52.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T18:46:52.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;8c01d610-f65f-11ed-9c51-eb9985bea257&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T16:09:34.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T16:09:35.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;8d5c91d0-f664-11ed-8d3d-29473b8a6f9f&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T16:45:24.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T16:45:27.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;8da9fb30-f4c7-11ed-abae-875255b3acc7&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T15:29:03.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-17T15:29:03.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;8e30a320-f642-11ed-a578-93bb7932b6bd&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T12:42:03.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T12:42:03.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;9904cdb0-f12b-11ed-8fef-75abeedfe5b3&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T01:15:07.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T01:15:07.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;992cef20-f12b-11ed-8fef-75abeedfe5b3&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T01:15:07.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T01:15:07.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;aac2b7a0-f442-11ed-a1b3-7fdde98aa8ba&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-16T23:37:48.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-16T23:37:48.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;ab7dcf30-f4cf-11ed-b9a2-6511e7b4ba1d&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T16:27:09.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-17T16:27:09.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;afc6c410-f05c-11ed-8c95-b1bcb9c1bd5b&quot;,
+      &quot;infographic_url&quot;: &quot;fdfs&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;fdf&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-12T00:33:59.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-12T00:33:59.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;b1851e60-f137-11ed-8d65-71aa50dc077a&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T02:41:42.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T02:41:42.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;b2b55880-f05c-11ed-8c95-b1bcb9c1bd5b&quot;,
+      &quot;infographic_url&quot;: &quot;fdfs&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;fdf&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: -1,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-12T00:34:04.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-12T00:34:04.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;b3211d80-f64d-11ed-8de0-d599255c9095&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T14:01:49.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T14:01:49.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;be7ecb20-f65f-11ed-9c51-eb9985bea257&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T16:10:59.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T16:11:20.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;bf101170-f137-11ed-8d65-71aa50dc077a&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T02:42:04.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T02:42:04.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;bfdb40f0-f89b-11ed-9df3-43711099196e&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-22T12:25:34.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-22T12:25:34.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;d6caed10-f134-11ed-b17c-8d6148bcc205&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T02:21:16.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T02:21:16.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;d7108190-f134-11ed-b17c-8d6148bcc205&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T02:21:16.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T02:21:16.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;e560e380-f642-11ed-a578-93bb7932b6bd&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T12:44:29.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T12:44:29.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;e62c8a60-f662-11ed-8d3d-29473b8a6f9f&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T16:33:34.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T16:33:34.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;e7210580-f38e-11ed-841e-1f8ce5c5b108&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-16T02:11:00.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-16T02:11:00.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;f1c84290-f32b-11ed-a29e-f3d0487b1e0e&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-15T14:22:38.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-15T14:22:38.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;f3e94d60-f134-11ed-b17c-8d6148bcc205&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: -1,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T02:22:05.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T02:22:05.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;f538a050-f4cf-11ed-b9a2-6511e7b4ba1d&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-17T16:29:12.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-17T16:29:12.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;f972cdd0-f65f-11ed-9c51-eb9985bea257&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T16:12:38.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T16:51:29.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;f978a460-f134-11ed-b17c-8d6148bcc205&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: -1,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T02:22:14.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T02:22:14.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;fd386480-f663-11ed-8d3d-29473b8a6f9f&quot;,
+      &quot;infographic_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;text_first_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_first_en&quot;: &quot;ejemplo&quot;,
+      &quot;stadium_image_url&quot;: &quot;https://www.youtube.com/watch?v=-vxdriGP1KE&quot;,
+      &quot;address_es&quot;: &quot;ejemplo&quot;,
+      &quot;address_en&quot;: &quot;ejemplo&quot;,
+      &quot;capacity&quot;: 1333,
+      &quot;text_second_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_second_en&quot;: &quot;ejemplo&quot;,
+      &quot;latitude&quot;: &quot;-12.117129&quot;,
+      &quot;longitude&quot;: &quot;-76.998995&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T16:41:22.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-19T16:41:22.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

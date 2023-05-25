@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: karate/features/resources/all.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>acceptance test</td>
+      <td>23 may. 2023, 15:52</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">karate/features/resources/all.feature</td>
+          <td      class="passed"    >7</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="216611126">0.216</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">karate/features/resources/all.feature</span>
+
+
+</div>
+
+        <div class="description indention">Get all common resources</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url urlBase</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:52:29.510 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_775193864.html">@positiveCase</a>
+</div>
+
+
+  <span class="lead-duration duration">0.216</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get all common resources</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/common/resources'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.211</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>15:52:29.511 request:
+1 &gt; GET https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/common/resources
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+1 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:52:29.722 response time in milliseconds: 211
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 4209
+1 &lt; Connection: keep-alive
+1 &lt; Date: Tue, 23 May 2023 20:52:29 GMT
+1 &lt; x-amzn-RequestId: 9214d50f-bc46-4c57-86ac-ff60f4829dc3
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 4209
+1 &lt; x-amz-apigw-id: FZMeMEVOCYcFsBQ=
+1 &lt; etag: W/&quot;1071-6ZY+0YdiUu6PakMkkOT/jF7pQMQ&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-646d278d-35a319d51e6aa481279aa70e;Sampled=0;lineage=1a7c2e09:0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 34a80a466446d2f079dddf146048d8b8.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-P1
+1 &lt; X-Amz-Cf-Id: flFHJDm35yzmP6X12ip3XO8D8ZXHZ26rkcQiF3LPlY7JlbiGvmKXqg==
+{&quot;status&quot;:true,&quot;data&quot;:[{&quot;id&quot;:&quot;034188b0-e387-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Resultados&quot;,&quot;name_en&quot;:&quot;Results&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:34:13.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:34:13.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;0b8b1db0-e387-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Partidos locales&quot;,&quot;name_en&quot;:&quot;Local matches&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:34:27.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:34:27.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;0eb8a5b0-f387-11ed-a268-1fb84c8f26e2&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Prueba&quot;,&quot;name_en&quot;:&quot;Test&quot;,&quot;created_at&quot;:&quot;2023-05-16T01:14:51.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-16T01:14:51.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;0f39bc90-f387-11ed-a268-1fb84c8f26e2&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Prueba&quot;,&quot;name_en&quot;:&quot;Test&quot;,&quot;created_at&quot;:&quot;2023-05-16T01:14:51.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-16T01:14:51.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;15310e60-e387-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Boletos disponibles&quot;,&quot;name_en&quot;:&quot;Available tickets&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:34:43.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:34:43.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;82ed5c70-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Equipo varonil&quot;,&quot;name_en&quot;:&quot;Male team&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:30:38.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:30:38.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;8b56eb50-f386-11ed-a6ef-c99671298ed8&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Prueba&quot;,&quot;name_en&quot;:&quot;Test&quot;,&quot;created_at&quot;:&quot;2023-05-16T01:11:10.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-16T01:11:10.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;8f306630-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Equipo femenil&quot;,&quot;name_en&quot;:&quot;Female team&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:30:58.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:30:58.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;9ba41ce0-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Sub-14&quot;,&quot;name_en&quot;:&quot;Sub-14&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:31:19.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:31:19.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;9ddf1210-f387-11ed-a9db-390d061456be&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Prueba&quot;,&quot;name_en&quot;:&quot;Test&quot;,&quot;created_at&quot;:&quot;2023-05-16T01:18:51.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-16T01:18:51.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;9e3a7f30-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Sub-16&quot;,&quot;name_en&quot;:&quot;Sub-16&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:31:23.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:31:23.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;9ed5f530-f387-11ed-a9db-390d061456be&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Prueba&quot;,&quot;name_en&quot;:&quot;Test&quot;,&quot;created_at&quot;:&quot;2023-05-16T01:18:52.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-16T01:18:52.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;a153cd20-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Sub-18&quot;,&quot;name_en&quot;:&quot;Sub-18&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:31:29.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:31:29.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;a8c68a20-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Sub-20&quot;,&quot;name_en&quot;:&quot;Sub-20&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:31:41.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:31:41.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;bc92e620-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Sub-17 femenil&quot;,&quot;name_en&quot;:&quot;Female Sub-17&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:32:14.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:32:14.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;cd8e95f0-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Pr&oacute;ximos partidos&quot;,&quot;name_en&quot;:&quot;Next matches&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:32:43.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:32:43.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;d6866c50-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Goles&quot;,&quot;name_en&quot;:&quot;Goals&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:32:58.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:32:58.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;e0bf4e30-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Eventos especiales&quot;,&quot;name_en&quot;:&quot;Special events&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:33:15.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:33:15.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;e8d61360-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Promociones&quot;,&quot;name_en&quot;:&quot;Promotions&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:33:28.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:33:28.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;fb581510-e386-11ed-8794-f58efb359f9b&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Adquisiciones y Bajas&quot;,&quot;name_en&quot;:&quot;Squad transfers&quot;,&quot;created_at&quot;:&quot;2023-04-25T16:34:00.000Z&quot;,&quot;updated_at&quot;:&quot;2023-04-25T16:34:00.000Z&quot;,&quot;deleted_at&quot;:null}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data != null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print karate.pretty(response)</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:52:29.727 [print] {
+  &quot;status&quot;: true,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;034188b0-e387-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Resultados&quot;,
+      &quot;name_en&quot;: &quot;Results&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:34:13.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:34:13.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0b8b1db0-e387-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Partidos locales&quot;,
+      &quot;name_en&quot;: &quot;Local matches&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:34:27.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:34:27.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0eb8a5b0-f387-11ed-a268-1fb84c8f26e2&quot;,
+      &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;,
+      &quot;name_es&quot;: &quot;Prueba&quot;,
+      &quot;name_en&quot;: &quot;Test&quot;,
+      &quot;created_at&quot;: &quot;2023-05-16T01:14:51.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-16T01:14:51.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;0f39bc90-f387-11ed-a268-1fb84c8f26e2&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Prueba&quot;,
+      &quot;name_en&quot;: &quot;Test&quot;,
+      &quot;created_at&quot;: &quot;2023-05-16T01:14:51.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-16T01:14:51.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;15310e60-e387-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Boletos disponibles&quot;,
+      &quot;name_en&quot;: &quot;Available tickets&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:34:43.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:34:43.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;82ed5c70-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;,
+      &quot;name_es&quot;: &quot;Equipo varonil&quot;,
+      &quot;name_en&quot;: &quot;Male team&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:30:38.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:30:38.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;8b56eb50-f386-11ed-a6ef-c99671298ed8&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Prueba&quot;,
+      &quot;name_en&quot;: &quot;Test&quot;,
+      &quot;created_at&quot;: &quot;2023-05-16T01:11:10.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-16T01:11:10.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;8f306630-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;,
+      &quot;name_es&quot;: &quot;Equipo femenil&quot;,
+      &quot;name_en&quot;: &quot;Female team&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:30:58.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:30:58.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;9ba41ce0-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;,
+      &quot;name_es&quot;: &quot;Sub-14&quot;,
+      &quot;name_en&quot;: &quot;Sub-14&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:31:19.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:31:19.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;9ddf1210-f387-11ed-a9db-390d061456be&quot;,
+      &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;,
+      &quot;name_es&quot;: &quot;Prueba&quot;,
+      &quot;name_en&quot;: &quot;Test&quot;,
+      &quot;created_at&quot;: &quot;2023-05-16T01:18:51.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-16T01:18:51.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;9e3a7f30-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;,
+      &quot;name_es&quot;: &quot;Sub-16&quot;,
+      &quot;name_en&quot;: &quot;Sub-16&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:31:23.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:31:23.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;9ed5f530-f387-11ed-a9db-390d061456be&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Prueba&quot;,
+      &quot;name_en&quot;: &quot;Test&quot;,
+      &quot;created_at&quot;: &quot;2023-05-16T01:18:52.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-16T01:18:52.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;a153cd20-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;,
+      &quot;name_es&quot;: &quot;Sub-18&quot;,
+      &quot;name_en&quot;: &quot;Sub-18&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:31:29.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:31:29.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;a8c68a20-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;,
+      &quot;name_es&quot;: &quot;Sub-20&quot;,
+      &quot;name_en&quot;: &quot;Sub-20&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:31:41.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:31:41.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;bc92e620-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;,
+      &quot;name_es&quot;: &quot;Sub-17 femenil&quot;,
+      &quot;name_en&quot;: &quot;Female Sub-17&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:32:14.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:32:14.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;cd8e95f0-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Pr&oacute;ximos partidos&quot;,
+      &quot;name_en&quot;: &quot;Next matches&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:32:43.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:32:43.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;d6866c50-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Goles&quot;,
+      &quot;name_en&quot;: &quot;Goals&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:32:58.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:32:58.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;e0bf4e30-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Eventos especiales&quot;,
+      &quot;name_en&quot;: &quot;Special events&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:33:15.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:33:15.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;e8d61360-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Promociones&quot;,
+      &quot;name_en&quot;: &quot;Promotions&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:33:28.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:33:28.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;fb581510-e386-11ed-8794-f58efb359f9b&quot;,
+      &quot;type&quot;: &quot;ALERTS&quot;,
+      &quot;name_es&quot;: &quot;Adquisiciones y Bajas&quot;,
+      &quot;name_en&quot;: &quot;Squad transfers&quot;,
+      &quot;created_at&quot;: &quot;2023-04-25T16:34:00.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-25T16:34:00.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

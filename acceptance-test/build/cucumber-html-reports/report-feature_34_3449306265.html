@@ -1,0 +1,2439 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: karate/features/resources/update_resources.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>acceptance test</td>
+      <td>23 may. 2023, 15:52</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">karate/features/resources/update_resources.feature</td>
+          <td      class="passed"    >58</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">58</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="15040017121">15.040</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">karate/features/resources/update_resources.feature</span>
+
+
+</div>
+
+        <div class="description indention">Update and Delete Resource</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url urlBase</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:52:34.533 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def fn = function(rsp) { return Object.keys(rsp) }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def sleep = function(pause){ java.lang.Thread.sleep(pause) }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_775193864.html">@positiveCase</a>
+</div>
+
+
+  <span class="lead-duration duration">7.310</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Create, Update and Delete Resource  - PREFERRED_TEAMS</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/common/resources'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;, &quot;name_es&quot;: &quot;Prueba&quot;, &quot;name_en&quot;: &quot;Test&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.233</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>15:52:34.538 request:
+1 &gt; POST https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/common/resources
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 62
+1 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Prueba&quot;,&quot;name_en&quot;:&quot;Test&quot;}
+
+15:52:34.770 response time in milliseconds: 232
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 209
+1 &lt; Connection: keep-alive
+1 &lt; Date: Tue, 23 May 2023 20:52:34 GMT
+1 &lt; x-amzn-RequestId: f8f891eb-4621-476c-822a-b86a6e277ed1
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 209
+1 &lt; x-amz-apigw-id: FZMe-GHjCYcFuvA=
+1 &lt; etag: W/&quot;d1-u+fZfUJSku6+UW8B1gX6JCDrUcQ&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-646d2792-69bf42117fa02ab5406d0611;Sampled=0;lineage=1a7c2e09:0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 6caf0a7ff8371450e2caa64a55d6ca68.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-P1
+1 &lt; X-Amz-Cf-Id: ENd24QNKav1sYxhDbCu3_gy4AlpuahhyTfQjz6VkVqUDyq-APtfA9w==
+{&quot;status&quot;:true,&quot;data&quot;:{&quot;id&quot;:&quot;be6cf950-f9ab-11ed-a074-c15387bfdfb6&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;Prueba&quot;,&quot;name_en&quot;:&quot;Test&quot;,&quot;updated_at&quot;:&quot;2023-05-23T20:52:34.789Z&quot;,&quot;created_at&quot;:&quot;2023-05-23T20:52:34.789Z&quot;}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print karate.pretty(response)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:52:34.771 [print] {
+  &quot;status&quot;: true,
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;be6cf950-f9ab-11ed-a074-c15387bfdfb6&quot;,
+    &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;,
+    &quot;name_es&quot;: &quot;Prueba&quot;,
+    &quot;name_en&quot;: &quot;Test&quot;,
+    &quot;updated_at&quot;: &quot;2023-05-23T20:52:34.789Z&quot;,
+    &quot;created_at&quot;: &quot;2023-05-23T20:52:34.789Z&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def resource_id = response.data.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print karate.pretty(resource_id)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>15:52:34.771 [print] be6cf950-f9ab-11ed-a074-c15387bfdfb6 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval sleep(2000)</span>
+
+  <span class="lead-duration duration">2.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/common/resources/' + resource_id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { &quot;type&quot;: &quot;PREFERRED_TEAMS&quot;, &quot;name_es&quot;: &quot;PruebaUpdate&quot;, &quot;name_en&quot;: &quot;Test&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method PATCH</span>
+
+  <span class="lead-duration duration">0.248</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>15:52:36.779 request:
+2 &gt; PATCH https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/common/resources/be6cf950-f9ab-11ed-a074-c15387bfdfb6
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 68
+2 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;PruebaUpdate&quot;,&quot;name_en&quot;:&quot;Test&quot;}
+
+15:52:37.026 response time in milliseconds: 247
+2 &lt; 200
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 26
+2 &lt; Connection: keep-alive
+2 &lt; Date: Tue, 23 May 2023 20:52:37 GMT
+2 &lt; x-amzn-RequestId: 6df0f2a7-bc68-4cc8-8510-a62d5cfb261a
+2 &lt; access-control-allow-origin: *
+2 &lt; x-amzn-Remapped-content-length: 26
+2 &lt; x-amz-apigw-id: FZMfUEzICYcFSow=
+2 &lt; etag: W/&quot;1a-Ju5/NRcwP4LXQEtqW7j86CTj60o&quot;
+2 &lt; x-powered-by: Express
+2 &lt; X-Amzn-Trace-Id: Root=1-646d2794-7cd88eb5667b89e74adffae6;Sampled=0;lineage=1a7c2e09:0
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; Via: 1.1 9ad91637379eaae78e4869a87ce15904.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Pop: BOG50-P1
+2 &lt; X-Amz-Cf-Id: 4n1wnTSVQ0WFwZgCjAYuaPqLGeO9zf_bNUCjz-KIEURhwTd4OBuvwg==
+{&quot;status&quot;:true,&quot;data&quot;:[1]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print karate.pretty(response)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>15:52:37.027 [print] {
+  &quot;status&quot;: true,
+  &quot;data&quot;: [
+    1
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data[0] == 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval sleep(2000)</span>
+
+  <span class="lead-duration duration">2.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/common/resources/' + resource_id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.415</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>15:52:39.030 request:
+3 &gt; GET https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/common/resources/be6cf950-f9ab-11ed-a074-c15387bfdfb6
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+3 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+15:52:39.445 response time in milliseconds: 415
+3 &lt; 200
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Content-Length: 233
+3 &lt; Connection: keep-alive
+3 &lt; Date: Tue, 23 May 2023 20:52:39 GMT
+3 &lt; x-amzn-RequestId: ae2ac996-986f-4ffc-99f0-5cfc623dd0b2
+3 &lt; access-control-allow-origin: *
+3 &lt; x-amzn-Remapped-content-length: 233
+3 &lt; x-amz-apigw-id: FZMfsGJviYcF5tg=
+3 &lt; etag: W/&quot;e9-+c8V86d/hV6ZLPrNOiaMcFJWHiQ&quot;
+3 &lt; x-powered-by: Express
+3 &lt; X-Amzn-Trace-Id: Root=1-646d2797-32c347a97b9ab0f63d559241;Sampled=0;lineage=1a7c2e09:0
+3 &lt; X-Cache: Miss from cloudfront
+3 &lt; Via: 1.1 c9c5e7596582e81eaf731e0b573c09bc.cloudfront.net (CloudFront)
+3 &lt; X-Amz-Cf-Pop: BOG50-P1
+3 &lt; X-Amz-Cf-Id: AJuC_X0hTUm7k5UmxMZADPiDtGhx7BXQGTke6BvgQzx-zCfedalYnQ==
+{&quot;status&quot;:true,&quot;data&quot;:{&quot;id&quot;:&quot;be6cf950-f9ab-11ed-a074-c15387bfdfb6&quot;,&quot;type&quot;:&quot;PREFERRED_TEAMS&quot;,&quot;name_es&quot;:&quot;PruebaUpdate&quot;,&quot;name_en&quot;:&quot;Test&quot;,&quot;created_at&quot;:&quot;2023-05-23T20:52:34.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-23T20:52:37.000Z&quot;,&quot;deleted_at&quot;:null}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.name_es == &quot;PruebaUpdate&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval sleep(2000)</span>
+
+  <span class="lead-duration duration">2.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/common/resources/' + resource_id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method DELETE</span>
+
+  <span class="lead-duration duration">0.396</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>15:52:41.452 request:
+4 &gt; DELETE https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/common/resources/be6cf950-f9ab-11ed-a074-c15387bfdfb6
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+4 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+15:52:41.848 response time in milliseconds: 395
+4 &lt; 200
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Content-Length: 24
+4 &lt; Connection: keep-alive
+4 &lt; Date: Tue, 23 May 2023 20:52:41 GMT
+4 &lt; x-amzn-RequestId: 13108c68-a9ea-41fe-b813-5c6e61a97952
+4 &lt; access-control-allow-origin: *
+4 &lt; x-amzn-Remapped-content-length: 24
+4 &lt; x-amz-apigw-id: FZMgFF_viYcFVAg=
+4 &lt; etag: W/&quot;18-SJXYIfmunh5eFRLI4CxFGjAHezc&quot;
+4 &lt; x-powered-by: Express
+4 &lt; X-Amzn-Trace-Id: Root=1-646d2799-2c4b15035e44c78e7b7ad4eb;Sampled=0;lineage=1a7c2e09:0
+4 &lt; X-Cache: Miss from cloudfront
+4 &lt; Via: 1.1 d469b242ea9735def0b70af5a09c94c0.cloudfront.net (CloudFront)
+4 &lt; X-Amz-Cf-Pop: BOG50-P1
+4 &lt; X-Amz-Cf-Id: 4_NkYNLQqhm3djUMX9nFwd3UWkbIBiJtJ7LD1upcVQe_P9leuoUS1g==
+{&quot;status&quot;:true,&quot;data&quot;:1}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data == 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url urlBase</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>15:52:41.850 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def fn = function(rsp) { return Object.keys(rsp) }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def sleep = function(pause){ java.lang.Thread.sleep(pause) }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_775193864.html">@positiveCase</a>
+</div>
+
+
+  <span class="lead-duration duration">7.729</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Create, Update and Delete Resource  - ALERTS</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/common/resources'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { &quot;type&quot;: &quot;ALERTS&quot;, &quot;name_es&quot;: &quot;Prueba&quot;, &quot;name_en&quot;: &quot;Test&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.387</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>15:52:41.852 request:
+1 &gt; POST https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/common/resources
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 53
+1 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Prueba&quot;,&quot;name_en&quot;:&quot;Test&quot;}
+
+15:52:42.238 response time in milliseconds: 386
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 200
+1 &lt; Connection: keep-alive
+1 &lt; Date: Tue, 23 May 2023 20:52:42 GMT
+1 &lt; x-amzn-RequestId: 89b7eded-6ac9-4151-95a9-67332010c655
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 200
+1 &lt; x-amz-apigw-id: FZMgJEUjiYcFeMA=
+1 &lt; etag: W/&quot;c8-tG8MsSFdD29ddPgXz8mLCBQoWX0&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-646d279a-34a78a8366f0f52c4cbf0901;Sampled=0;lineage=1a7c2e09:0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 2e8010b39acc99d1371b96a5f3d32b6a.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-P1
+1 &lt; X-Amz-Cf-Id: eUiz1qHUhc9aV5eJv7eyAWhQO42HshnUqGqjszfG-C6GtslCtYNWPg==
+{&quot;status&quot;:true,&quot;data&quot;:{&quot;id&quot;:&quot;c2e05900-f9ab-11ed-a074-c15387bfdfb6&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;Prueba&quot;,&quot;name_en&quot;:&quot;Test&quot;,&quot;updated_at&quot;:&quot;2023-05-23T20:52:42.256Z&quot;,&quot;created_at&quot;:&quot;2023-05-23T20:52:42.256Z&quot;}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print karate.pretty(response)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>15:52:42.239 [print] {
+  &quot;status&quot;: true,
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;c2e05900-f9ab-11ed-a074-c15387bfdfb6&quot;,
+    &quot;type&quot;: &quot;ALERTS&quot;,
+    &quot;name_es&quot;: &quot;Prueba&quot;,
+    &quot;name_en&quot;: &quot;Test&quot;,
+    &quot;updated_at&quot;: &quot;2023-05-23T20:52:42.256Z&quot;,
+    &quot;created_at&quot;: &quot;2023-05-23T20:52:42.256Z&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def resource_id = response.data.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print karate.pretty(resource_id)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>15:52:42.239 [print] c2e05900-f9ab-11ed-a074-c15387bfdfb6 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval sleep(2000)</span>
+
+  <span class="lead-duration duration">2.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/common/resources/' + resource_id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { &quot;type&quot;: &quot;ALERTS&quot;, &quot;name_es&quot;: &quot;PruebaUpdate&quot;, &quot;name_en&quot;: &quot;Test&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method PATCH</span>
+
+  <span class="lead-duration duration">0.421</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>15:52:44.247 request:
+2 &gt; PATCH https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/common/resources/c2e05900-f9ab-11ed-a074-c15387bfdfb6
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 59
+2 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;PruebaUpdate&quot;,&quot;name_en&quot;:&quot;Test&quot;}
+
+15:52:44.666 response time in milliseconds: 419
+2 &lt; 200
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 26
+2 &lt; Connection: keep-alive
+2 &lt; Date: Tue, 23 May 2023 20:52:44 GMT
+2 &lt; x-amzn-RequestId: 73522aef-8dee-427e-b8cf-adeb10e323fa
+2 &lt; access-control-allow-origin: *
+2 &lt; x-amzn-Remapped-content-length: 26
+2 &lt; x-amz-apigw-id: FZMghESSCYcFxqg=
+2 &lt; etag: W/&quot;1a-Ju5/NRcwP4LXQEtqW7j86CTj60o&quot;
+2 &lt; x-powered-by: Express
+2 &lt; X-Amzn-Trace-Id: Root=1-646d279c-6775cde63aad4042351f5c67;Sampled=0;lineage=1a7c2e09:0
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; Via: 1.1 d469b242ea9735def0b70af5a09c94c0.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Pop: BOG50-P1
+2 &lt; X-Amz-Cf-Id: X_Qo393696k53jG9DaV6sT-2vBKp6ABm7Pc23ezjSlbaGGR7uK_2Yw==
+{&quot;status&quot;:true,&quot;data&quot;:[1]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print karate.pretty(response)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>15:52:44.667 [print] {
+  &quot;status&quot;: true,
+  &quot;data&quot;: [
+    1
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data[0] == 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval sleep(2000)</span>
+
+  <span class="lead-duration duration">2.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/common/resources/' + resource_id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.452</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>15:52:46.673 request:
+3 &gt; GET https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/common/resources/c2e05900-f9ab-11ed-a074-c15387bfdfb6
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+3 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+15:52:47.124 response time in milliseconds: 451
+3 &lt; 200
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Content-Length: 224
+3 &lt; Connection: keep-alive
+3 &lt; Date: Tue, 23 May 2023 20:52:47 GMT
+3 &lt; x-amzn-RequestId: 294f6c3b-dc59-4e7d-9f33-ffae5cd5f261
+3 &lt; access-control-allow-origin: *
+3 &lt; x-amzn-Remapped-content-length: 224
+3 &lt; x-amz-apigw-id: FZMg6EDwCYcF06Q=
+3 &lt; etag: W/&quot;e0-aecnlC7St4HH+K4lXIBi1eAtni0&quot;
+3 &lt; x-powered-by: Express
+3 &lt; X-Amzn-Trace-Id: Root=1-646d279f-22ad847b00e793a06549728b;Sampled=0;lineage=1a7c2e09:0
+3 &lt; X-Cache: Miss from cloudfront
+3 &lt; Via: 1.1 19e83311b780f9d326ad6d361ead9c22.cloudfront.net (CloudFront)
+3 &lt; X-Amz-Cf-Pop: BOG50-P1
+3 &lt; X-Amz-Cf-Id: G8ts_DN9zzBmmYYBC2ZvQAvwCBdNDr3H3J6E-bkQwEqqUA3320SxXQ==
+{&quot;status&quot;:true,&quot;data&quot;:{&quot;id&quot;:&quot;c2e05900-f9ab-11ed-a074-c15387bfdfb6&quot;,&quot;type&quot;:&quot;ALERTS&quot;,&quot;name_es&quot;:&quot;PruebaUpdate&quot;,&quot;name_en&quot;:&quot;Test&quot;,&quot;created_at&quot;:&quot;2023-05-23T20:52:42.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-23T20:52:44.000Z&quot;,&quot;deleted_at&quot;:null}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.name_es == &quot;PruebaUpdate&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval sleep(2000)</span>
+
+  <span class="lead-duration duration">2.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/common/resources/' + resource_id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method DELETE</span>
+
+  <span class="lead-duration duration">0.450</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>15:52:49.132 request:
+4 &gt; DELETE https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/common/resources/c2e05900-f9ab-11ed-a074-c15387bfdfb6
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+4 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+15:52:49.581 response time in milliseconds: 449
+4 &lt; 200
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Content-Length: 24
+4 &lt; Connection: keep-alive
+4 &lt; Date: Tue, 23 May 2023 20:52:49 GMT
+4 &lt; x-amzn-RequestId: 7045fe31-7017-4b0b-a19d-d31ef808493d
+4 &lt; access-control-allow-origin: *
+4 &lt; x-amzn-Remapped-content-length: 24
+4 &lt; x-amz-apigw-id: FZMhSEBBiYcFrtw=
+4 &lt; etag: W/&quot;18-SJXYIfmunh5eFRLI4CxFGjAHezc&quot;
+4 &lt; x-powered-by: Express
+4 &lt; X-Amzn-Trace-Id: Root=1-646d27a1-2e8bdaa906cfbc224ea3caf4;Sampled=0;lineage=1a7c2e09:0
+4 &lt; X-Cache: Miss from cloudfront
+4 &lt; Via: 1.1 3f5eb552d0fd2c9251e305dc7c5e54aa.cloudfront.net (CloudFront)
+4 &lt; X-Amz-Cf-Pop: BOG50-P1
+4 &lt; X-Amz-Cf-Id: BwEOAx_ylT8d_KM3bi17RBcJ5bDcV-OoEhN_4Qp34hMVCnbUEqEw_Q==
+{&quot;status&quot;:true,&quot;data&quot;:1}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data == 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("c6ee2b46-b96b-48a5-a616-721b83df32c1",{name:"andresbernalpadilla"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>karate.features.Legals.get_all_legals</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-05-23 03:50:48 p.m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Get all legals</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karate/features/Legals/get_all_legals.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get all legals</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">positiveCase</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Get all legals</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>432</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:50:47.764 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/legals&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">431</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">15:50:47.766 request:
+1 &gt; GET https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev/api/legals
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDBmM2MzODAtZjBkOS0xMWVkLTg0NmItMmY2YjM3YTQ2MTJiIiwiaWF0IjoxNjg0ODc1MDMzLCJleHAiOjE2ODQ5NjE0MzN9.hx-udjaVWDd3t0QqvZwOvHN6yrqx19wEJHZ45x7rXjQ
+1 &gt; Host: c7r0fy6wz3.execute-api.us-east-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:50:48.196 response time in milliseconds: 430
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2448
+1 &lt; Connection: keep-alive
+1 &lt; Date: Tue, 23 May 2023 20:50:48 GMT
+1 &lt; x-amzn-RequestId: a65b8105-e6c7-4747-b557-2f8c2861b0a3
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 2448
+1 &lt; x-amz-apigw-id: FZMOUHpHCYcF9mA=
+1 &lt; etag: W/&quot;990-fl0Kr5ycf+j14cK4lb24pPIIquY&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-646d2728-2af6875e337f1c3e317c7229;Sampled=0;lineage=1a7c2e09:0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 6e1f0172b684caca2f66247f5ad9eea0.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-P1
+1 &lt; X-Amz-Cf-Id: A3rWV6OCfB6OidylMZIM1EPTwa3VEVIkff-jNYYnL5UjFZRo0hD65w==
+{&quot;status&quot;:true,&quot;data&quot;:[{&quot;id&quot;:&quot;09f5d190-f668-11ed-a435-617b1db10d8e&quot;,&quot;title_es&quot;:&quot;ejemplo&quot;,&quot;title_en&quot;:&quot;example&quot;,&quot;text_es&quot;:&quot;ejemplo&quot;,&quot;text_en&quot;:&quot;example&quot;,&quot;created_at&quot;:&quot;2023-05-19T17:10:22.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-22T12:46:05.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;248cf820-f141-11ed-860d-ffc3e16ab098&quot;,&quot;title_es&quot;:&quot;111&quot;,&quot;title_en&quot;:&quot;example&quot;,&quot;text_es&quot;:&quot;ejemplo&quot;,&quot;text_en&quot;:&quot;example&quot;,&quot;created_at&quot;:&quot;2023-05-13T03:49:20.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T03:49:20.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;2f723180-f13f-11ed-860d-ffc3e16ab098&quot;,&quot;title_es&quot;:&quot;111&quot;,&quot;title_en&quot;:&quot;example&quot;,&quot;text_es&quot;:&quot;ejemplo&quot;,&quot;text_en&quot;:&quot;example&quot;,&quot;created_at&quot;:&quot;2023-05-13T03:35:19.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T03:35:19.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;4b9c0930-ee8d-11ed-92a9-cd672362be09&quot;,&quot;title_es&quot;:&quot;Términos y Condiciones&quot;,&quot;title_en&quot;:&quot;Terms &amp; Conditions&quot;,&quot;text_es&quot;:&quot;&lt;p&gt;Términos y Condiciones Contenido&lt;/p&gt;&quot;,&quot;text_en&quot;:&quot;&lt;p&gt;Terms &amp; Conditions Content.&lt;/p&gt;&quot;,&quot;created_at&quot;:&quot;2023-05-09T17:16:54.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-09T17:16:54.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;53d911e0-f13c-11ed-9714-dfd9d7d6c82b&quot;,&quot;title_es&quot;:&quot;ejemplo&quot;,&quot;title_en&quot;:&quot;example&quot;,&quot;text_es&quot;:&quot;ejemplo&quot;,&quot;text_en&quot;:&quot;example&quot;,&quot;created_at&quot;:&quot;2023-05-13T03:14:52.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T03:14:52.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;63d29d20-ee8d-11ed-92a9-cd672362be09&quot;,&quot;title_es&quot;:&quot;Políticas de Privacidad&quot;,&quot;title_en&quot;:&quot;Privacy Policies&quot;,&quot;text_es&quot;:&quot;&lt;p&gt;Políticas de Privacidad Contenido&lt;/p&gt;&quot;,&quot;text_en&quot;:&quot;&lt;p&gt;Privacy Policies Content.&lt;/p&gt;&quot;,&quot;created_at&quot;:&quot;2023-05-09T17:17:35.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-09T17:17:35.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;9abcd060-f89e-11ed-b678-53fc48e65c77&quot;,&quot;title_es&quot;:&quot;ejemplo&quot;,&quot;title_en&quot;:&quot;example&quot;,&quot;text_es&quot;:&quot;ejemplo&quot;,&quot;text_en&quot;:&quot;example&quot;,&quot;created_at&quot;:&quot;2023-05-22T12:46:00.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-22T12:46:00.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;a17582a0-f13f-11ed-860d-ffc3e16ab098&quot;,&quot;title_es&quot;:&quot;ejemplo&quot;,&quot;title_en&quot;:&quot;example&quot;,&quot;text_es&quot;:&quot;ejemplo&quot;,&quot;text_en&quot;:&quot;example&quot;,&quot;created_at&quot;:&quot;2023-05-13T03:38:31.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T03:38:31.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;b977c020-f13f-11ed-860d-ffc3e16ab098&quot;,&quot;title_es&quot;:&quot;ejemplo&quot;,&quot;title_en&quot;:&quot;example&quot;,&quot;text_es&quot;:&quot;ejemplo&quot;,&quot;text_en&quot;:&quot;example&quot;,&quot;created_at&quot;:&quot;2023-05-13T03:39:11.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T03:39:11.000Z&quot;,&quot;deleted_at&quot;:null},{&quot;id&quot;:&quot;ed608f50-f141-11ed-860d-ffc3e16ab098&quot;,&quot;title_es&quot;:&quot;ejemplo&quot;,&quot;title_en&quot;:&quot;example&quot;,&quot;text_es&quot;:&quot;ejemplo&quot;,&quot;text_en&quot;:&quot;example&quot;,&quot;created_at&quot;:&quot;2023-05-13T03:54:57.000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T03:54:57.000Z&quot;,&quot;deleted_at&quot;:null}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">15:50:48.198 [print] {
+  &quot;status&quot;: true,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;09f5d190-f668-11ed-a435-617b1db10d8e&quot;,
+      &quot;title_es&quot;: &quot;ejemplo&quot;,
+      &quot;title_en&quot;: &quot;example&quot;,
+      &quot;text_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_en&quot;: &quot;example&quot;,
+      &quot;created_at&quot;: &quot;2023-05-19T17:10:22.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-22T12:46:05.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;248cf820-f141-11ed-860d-ffc3e16ab098&quot;,
+      &quot;title_es&quot;: &quot;111&quot;,
+      &quot;title_en&quot;: &quot;example&quot;,
+      &quot;text_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_en&quot;: &quot;example&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T03:49:20.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T03:49:20.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;2f723180-f13f-11ed-860d-ffc3e16ab098&quot;,
+      &quot;title_es&quot;: &quot;111&quot;,
+      &quot;title_en&quot;: &quot;example&quot;,
+      &quot;text_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_en&quot;: &quot;example&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T03:35:19.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T03:35:19.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;4b9c0930-ee8d-11ed-92a9-cd672362be09&quot;,
+      &quot;title_es&quot;: &quot;Términos y Condiciones&quot;,
+      &quot;title_en&quot;: &quot;Terms &amp; Conditions&quot;,
+      &quot;text_es&quot;: &quot;&lt;p&gt;Términos y Condiciones Contenido&lt;/p&gt;&quot;,
+      &quot;text_en&quot;: &quot;&lt;p&gt;Terms &amp; Conditions Content.&lt;/p&gt;&quot;,
+      &quot;created_at&quot;: &quot;2023-05-09T17:16:54.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-09T17:16:54.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;53d911e0-f13c-11ed-9714-dfd9d7d6c82b&quot;,
+      &quot;title_es&quot;: &quot;ejemplo&quot;,
+      &quot;title_en&quot;: &quot;example&quot;,
+      &quot;text_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_en&quot;: &quot;example&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T03:14:52.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T03:14:52.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;63d29d20-ee8d-11ed-92a9-cd672362be09&quot;,
+      &quot;title_es&quot;: &quot;Políticas de Privacidad&quot;,
+      &quot;title_en&quot;: &quot;Privacy Policies&quot;,
+      &quot;text_es&quot;: &quot;&lt;p&gt;Políticas de Privacidad Contenido&lt;/p&gt;&quot;,
+      &quot;text_en&quot;: &quot;&lt;p&gt;Privacy Policies Content.&lt;/p&gt;&quot;,
+      &quot;created_at&quot;: &quot;2023-05-09T17:17:35.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-09T17:17:35.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;9abcd060-f89e-11ed-b678-53fc48e65c77&quot;,
+      &quot;title_es&quot;: &quot;ejemplo&quot;,
+      &quot;title_en&quot;: &quot;example&quot;,
+      &quot;text_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_en&quot;: &quot;example&quot;,
+      &quot;created_at&quot;: &quot;2023-05-22T12:46:00.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-22T12:46:00.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;a17582a0-f13f-11ed-860d-ffc3e16ab098&quot;,
+      &quot;title_es&quot;: &quot;ejemplo&quot;,
+      &quot;title_en&quot;: &quot;example&quot;,
+      &quot;text_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_en&quot;: &quot;example&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T03:38:31.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T03:38:31.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;b977c020-f13f-11ed-860d-ffc3e16ab098&quot;,
+      &quot;title_es&quot;: &quot;ejemplo&quot;,
+      &quot;title_en&quot;: &quot;example&quot;,
+      &quot;text_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_en&quot;: &quot;example&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T03:39:11.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T03:39:11.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;ed608f50-f141-11ed-860d-ffc3e16ab098&quot;,
+      &quot;title_es&quot;: &quot;ejemplo&quot;,
+      &quot;title_en&quot;: &quot;example&quot;,
+      &quot;text_es&quot;: &quot;ejemplo&quot;,
+      &quot;text_en&quot;: &quot;example&quot;,
+      &quot;created_at&quot;: &quot;2023-05-13T03:54:57.000Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-05-13T03:54:57.000Z&quot;,
+      &quot;deleted_at&quot;: null
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

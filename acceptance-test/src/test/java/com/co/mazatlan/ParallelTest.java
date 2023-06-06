@@ -25,6 +25,9 @@ public class ParallelTest {
 
     @Test
     public void testPaymentSearchParallel() {
+
+        System.setProperty("karate.env", "customAuth");
+
         Results results = Runner.path("classpath:karate/features")
                 .outputCucumberJson(true)
                 .tags("~@ignore")

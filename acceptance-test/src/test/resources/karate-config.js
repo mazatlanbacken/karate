@@ -9,7 +9,8 @@ function config() {
     }
 
     var config = {
-
+        useCustomAuth: true,
+        urlBase: 'https://c7r0fy6wz3.execute-api.us-east-2.amazonaws.com/dev' // Valor predeterminado de urlBase
     };
 
     if (env == 'dev') {
@@ -30,9 +31,8 @@ function config() {
 
     karate.configure('connectTimeout', 5000);
     karate.configure('readTimeout', 5000);
-    return config;
+    return config; // Agregar esta línea para devolver la variable config
 }
-
 
 
 

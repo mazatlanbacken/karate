@@ -1,27 +1,19 @@
 [
   {
-    "fullname": "Test",
-    "nickname": "Test",
-    "shirt_number": 1,
-    "birth_year": 2000,
-    "favorite_tshirt": "163d0ac0-e053-11ed-b11e-2575f4adc39e",
-    "email": "prueba2@prueba2.com",
-    "common_resources": [
-      "2a259390-e04e-11ed-92c3-3f632f7f5179"
-    ],
-    "password": "123456"
+    "name": "Test",
+    "last_name": "Test",
+    "phone": "+51945122683",
+    "birthdate": "2000-10-10",
+    "email": "prueba12202@gmail.com",
+    "password": "aBc123*"
   },
 
   {
-    "fullname": "Test",
-    "nickname": "Test",
-    "shirt_number": 1,
-    "birth_year": -1,
-    "favorite_tshirt": "163d0ac0-e053-11ed-b11e-2575f4adc39e",
-    "email": "prueba2@prueba2.com",
-    "common_resources": [
-      "2a259390-e04e-11ed-92c3-3f632f7f5179"
-    ],
-    "password": "123456"
+    "name": "Test",
+    "last_name": "Test",
+    "phone": "+51945122683",
+    "birthdate": "-2000-10-10",
+    "email": "prueba12202434342@gmail.com",
+    "password": "aBc123*"
   }
 ]

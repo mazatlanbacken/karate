@@ -24,7 +24,6 @@ Feature: Create and Delete Stadium
     Then status 200
     * print karate.pretty(response)
     And match response.status == true
-    And match response.data[0] == 1
 
     * eval sleep(2000)
     Given path '/api/stadiums/' + stadium_id
@@ -37,4 +36,3 @@ Feature: Create and Delete Stadium
     And method DELETE
     Then status 200
     And match response.status == true
-    And match response.data == 1

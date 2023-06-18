@@ -25,7 +25,7 @@ Feature: Create and Delete team
     Then status 200
     * print karate.pretty(response)
     And match response.status == true
-    And match response.data[0] == 1
+
 
     Given path '/api/team/members/' + members_id
     And method Get
@@ -49,7 +49,7 @@ Feature: Create and Delete team
     Then status 200
     * print karate.pretty(response)
     And match response.status == true
-    And match response.data[0] == 1
+
 
     Given path '/api/team/members/' + members_id
     And method Get

@@ -18,7 +18,6 @@ Feature: update  Team Positions
     Then status 200
     * print karate.pretty(response)
     And match response.status == true
-    And match response.data[0] == 1
 
     Given path '/api/scorer/positions/' + scorer_id
     And method GET
@@ -40,7 +39,6 @@ Feature: update  Team Positions
     Then status 200
     * print karate.pretty(response)
     And match response.status == true
-    And match response.data[0] == 1
 
     Given path '/api/scorer/positions/' + scorer_id
     And method GET

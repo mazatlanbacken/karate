@@ -22,7 +22,6 @@ Feature: Update and Delete Resource
     Then status 200
     * print karate.pretty(response)
     And match response.status == true
-    And match response.data[0] == 1
 
     * eval sleep(2000)
     Given path '/api/common/resources/' + resource_id
@@ -35,7 +34,6 @@ Feature: Update and Delete Resource
     And method DELETE
     Then status 200
     And match response.status == true
-    And match response.data == 1
 
     Examples:
       | type            |

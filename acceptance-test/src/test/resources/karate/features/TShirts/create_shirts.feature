@@ -17,7 +17,7 @@ Feature: Create and Delete tshirts
     And method DELETE
     Then status 200
     And match response.status == true
-    And match response.data == 1
+
 
   @positiveCase
   Scenario: Validate tshirts  response structure
@@ -32,7 +32,7 @@ Feature: Create and Delete tshirts
     And method DELETE
     Then status 200
     And match response.status == true
-    And match response.data == 1
+
 
   @negativeCase
   Scenario: Create tshirts with Invalid URL

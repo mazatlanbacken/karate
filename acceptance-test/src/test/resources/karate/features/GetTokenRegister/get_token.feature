@@ -38,7 +38,7 @@ Feature: Get token
 
   Scenario: get authentication token
     Given path '/api/auth/otp/sms/send'
-    And request {"phone": "+573024187851"}
+    And request {"phone": "+573014148410"}
     And header Content-Type = 'application/json'
     And method Post
     Then status 200
@@ -50,7 +50,7 @@ Feature: Get token
     Given path '/api/auth/otp/sms/verify'
     And def responseToken = karate.get('tokenRegister')
     And karate.log('Token value:', karate.get('responseToken'))
-    And  request {"phone": "+573024187851", "code": "#(responseToken)"}
+    And  request {"phone": "+573014148410", "code": "#(responseToken)"}
     And method Post
     Then status 200
     * eval sleep(2000)
@@ -62,7 +62,7 @@ Feature: Get token
 
 
     Given path '/api/auth/register'
-    And  request {"name":"Test","last_name":"Test","phone":"+573024187851","birthdate":"2000-10-10","email":"andro11anto@gmail.com","password":"aBc123*"}
+    And  request {"name":"Test","last_name":"Test","phone":"+573014148410","birthdate":"2000-10-10","email":"anretanto@gmail.com","password":"aBc123*"}
     And eval if (karate.callSingle('classpath:karate-config.js')['useCustomAuth']) karate.configure('headers', { 'Authorization': 'Bearer ' + karate.get('tokenverify') })
     And header Authorization = 'Bearer ' + karate.get('tokenverify')
     And header Content-Type = 'application/json'
@@ -90,7 +90,7 @@ Feature: Get token
   @negativeCase
   Scenario: Register previously created user
     Given path '/api/auth/otp/sms/send'
-    And request {"phone": "+573024187851"}
+    And request {"phone": "+573024567843"}
     And header Content-Type = 'application/json'
     And method Post
     Then status 200
@@ -102,7 +102,7 @@ Feature: Get token
     Given path '/api/auth/otp/sms/verify'
     And def responseToken = karate.get('tokenRegister')
     And karate.log('Token value:', karate.get('responseToken'))
-    And  request {"phone": "+573024187851", "code": "#(responseToken)"}
+    And  request {"phone": "+573024567843", "code": "#(responseToken)"}
     And method Post
     Then status 200
     * eval sleep(2000)
@@ -125,7 +125,7 @@ Feature: Get token
   Scenario: Register user with invalid email
 
     Given path '/api/auth/otp/sms/send'
-    And request {"phone": "+573024187851"}
+    And request {"phone": "+5730242427851"}
     And header Content-Type = 'application/json'
     And method Post
     Then status 200
@@ -137,7 +137,7 @@ Feature: Get token
     Given path '/api/auth/otp/sms/verify'
     And def responseToken = karate.get('tokenRegister')
     And karate.log('Token value:', karate.get('responseToken'))
-    And  request {"phone": "+573024187851", "code": "#(responseToken)"}
+    And  request {"phone": "+5730242427851", "code": "#(responseToken)"}
     And method Post
     Then status 200
     * eval sleep(2000)
@@ -162,7 +162,7 @@ Feature: Get token
   Scenario: Register user with invalid birth year
 
     Given path '/api/auth/otp/sms/send'
-    And request {"phone": "+573024187851"}
+    And request {"phone": "+573014147851"}
     And header Content-Type = 'application/json'
     And method Post
     Then status 200
@@ -174,7 +174,7 @@ Feature: Get token
     Given path '/api/auth/otp/sms/verify'
     And def responseToken = karate.get('tokenRegister')
     And karate.log('Token value:', karate.get('responseToken'))
-    And  request {"phone": "+573024187851", "code": "#(responseToken)"}
+    And  request {"phone": "+573014147851", "code": "#(responseToken)"}
     And method Post
     Then status 200
     * eval sleep(2000)

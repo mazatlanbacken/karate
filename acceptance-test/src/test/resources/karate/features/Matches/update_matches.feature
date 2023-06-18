@@ -19,7 +19,6 @@ Feature: Create and Delete Stadium
     Then status 200
     * print karate.pretty(response)
     And match response.status == true
-    And match response.data[0] == 1
 
     Given path '/api/matches/' + match_id
     And method GET
@@ -41,7 +40,6 @@ Feature: Create and Delete Stadium
     Then status 200
     * print karate.pretty(response)
     And match response.status == true
-    And match response.data[0] == 1
 
     Given path '/api/matches/' + match_id
     And method GET

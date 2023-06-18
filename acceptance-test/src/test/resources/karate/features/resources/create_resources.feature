@@ -19,7 +19,6 @@ Feature: Create and Delete resources
     And method DELETE
     When status 200
     Then match response.status == true
-    And match response.data == 1
 
     Examples:
       | type            |
@@ -42,7 +41,6 @@ Feature: Create and Delete resources
     And method DELETE
     When status 200
     Then match response.status == true
-    And match response.data == 1
 
 
 

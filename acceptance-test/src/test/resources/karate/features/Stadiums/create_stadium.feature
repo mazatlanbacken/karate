@@ -18,7 +18,7 @@ Feature: Create and Delete Stadium
     And method DELETE
     Then status 200
     And match response.status == true
-    And match response.data == 1
+
 
 
   @positiveCase

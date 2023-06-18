@@ -28,3 +28,20 @@ Feature: Get Matches  id
     And method GET
     Then status 200
     And match response.status == true
+
+
+  @positiveCase
+  Scenario: Get Latest Match
+    Given path '/api/matches/latest'
+    And method GET
+    Then status 200
+    And match response.status == true
+    And match response.data.id != null
+    And match response.data.goal_stats_id != null
+    And match response.data.goal_stats_json != null
+    And match response.data.season != null
+    And match response.data.matchday != null
+    And match response.data.match_date != null
+    And match response.data.created_at != null
+    And match response.data.updated_at != null
+    And match response.data.deleted_at == null

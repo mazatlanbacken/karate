@@ -31,3 +31,13 @@ Feature: All
       | INVALID_TYPE     |
       | UNKNOWN_TYPE     |
       | INCORRECT_TYPE   |
+
+
+
+  Scenario: Get group By Type
+
+    Given path '/api/common/resources/groupByType'
+    And method Get
+    Then status 200
+    And match response.status == true
+    * print karate.pretty(response)

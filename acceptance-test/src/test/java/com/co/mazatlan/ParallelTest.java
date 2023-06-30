@@ -28,7 +28,7 @@ public class ParallelTest {
 
         System.setProperty("karate.env", "customAuth");
 
-        Results results = Runner.path("classpath:karate/features/GetTokenRegister/get_token.feature")
+        Results results = Runner.path("classpath:karate/features")
                 .outputCucumberJson(true)
                 .tags("~@ignore")
                 .parallel(0);

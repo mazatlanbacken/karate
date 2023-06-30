@@ -69,3 +69,12 @@ Feature: Validate Error Message
     Then status 200
     And match response.status == true
     And match fn(response.data[0]) contains ["id", "trivia_question_id", "user_id", "answer", "is_correct", "created_at", "updated_at", "deleted_at"]
+
+
+  Scenario: Validate Response Structure Structure of /api/trivia/answers/match/:slug/user/:id
+    Given path '/api/trivia/answers/match/c4d2ff90-f10b-11ed-bc92-9b2d1c01e966/user/00bc2d70-00bf-11ee-bb0f-ed9d95240230'
+    When method GET
+    Then status 200
+    And match response.status == true
+    And match response.data[0] contains {id: '#string',trivia_question_id: '#string',user_id: '#string',answer: '#number',is_correct: '#number',created_at: '#string',updated_at: '#string',deleted_at: '##null'}
+    And match response.data[0].trivia_question contains {id: '#string',match_id: '#string',question: '#string',correct_answer: '#number',created_at: '#string',updated_at: '#string',deleted_at: '##null'}

@@ -31,12 +31,6 @@ Feature: Get token
     return prefix + randomNumber;
   }
   """
-
-
-
-
-
-  Scenario: get authentication token
     Given path '/api/auth/otp/sms/send'
     And request {"phone": "+573014148410"}
     And header Content-Type = 'application/json'
@@ -61,6 +55,8 @@ Feature: Get token
 
 
 
+  Scenario: get authentication token
+
     Given path '/api/auth/register'
     And  request {"name":"Test","last_name":"Test","phone":"+573014148410","birthdate":"2000-10-10","email":"anretanto@gmail.com","password":"aBc123*"}
     And eval if (karate.callSingle('classpath:karate-config.js')['useCustomAuth']) karate.configure('headers', { 'Authorization': 'Bearer ' + karate.get('tokenverify') })
@@ -69,7 +65,9 @@ Feature: Get token
     And method Post
     Then status 200
     * def responseTokenRegister = response.access_token
+    * print karate.pretty(responseTokenRegister)
     And def client_id = response.user.id
+    * print karate.pretty(client_id )
     And karate.set('tokenVerifyRegister', responseTokenRegister)
     And karate.log('Register response:', karate.get('tokenVerifyRegister'))
 
@@ -87,28 +85,18 @@ Feature: Get token
 
 
 
+
+    Given path '/api/users/' + client_id
+    And  request {"reason": "Ejemplo de ejemplof"}
+    When method DELETE
+    Then status 200
+
+
+
+
   @negativeCase
   Scenario: Register previously created user
-    Given path '/api/auth/otp/sms/send'
-    And request {"phone": "+573024567843"}
-    And header Content-Type = 'application/json'
-    And method Post
-    Then status 200
-    * def responseToken = response.code
-    And karate.set('tokenRegister', responseToken)
-    And karate.log('Token value:', karate.get('tokenRegister'))
-    * eval sleep(2000)
 
-    Given path '/api/auth/otp/sms/verify'
-    And def responseToken = karate.get('tokenRegister')
-    And karate.log('Token value:', karate.get('responseToken'))
-    And  request {"phone": "+573024567843", "code": "#(responseToken)"}
-    And method Post
-    Then status 200
-    * eval sleep(2000)
-    * def responseToken = response.token
-    And karate.set('tokenverify', responseToken)
-    And karate.log('Token value:', karate.get('tokenverify'))
 
     * def register_data = read('classpath:data/register_add.json')
     Given path '/api/auth/register'
@@ -124,26 +112,6 @@ Feature: Get token
   @negativeCase
   Scenario: Register user with invalid email
 
-    Given path '/api/auth/otp/sms/send'
-    And request {"phone": "+5730242427851"}
-    And header Content-Type = 'application/json'
-    And method Post
-    Then status 200
-    * def responseToken = response.code
-    And karate.set('tokenRegister', responseToken)
-    And karate.log('Token value:', karate.get('tokenRegister'))
-    * eval sleep(2000)
-
-    Given path '/api/auth/otp/sms/verify'
-    And def responseToken = karate.get('tokenRegister')
-    And karate.log('Token value:', karate.get('responseToken'))
-    And  request {"phone": "+5730242427851", "code": "#(responseToken)"}
-    And method Post
-    Then status 200
-    * eval sleep(2000)
-    * def responseToken = response.token
-    And karate.set('tokenverify', responseToken)
-    And karate.log('Token value:', karate.get('tokenverify'))
 
 
     * def register_data = {"name":"Test","last_name":"Test","phone":"+51945122683","birthdate":"2000-10-10","email":"prueba12202","password":"aBc123*"}
@@ -161,26 +129,6 @@ Feature: Get token
   @negativeCase
   Scenario: Register user with invalid birth year
 
-    Given path '/api/auth/otp/sms/send'
-    And request {"phone": "+573014147851"}
-    And header Content-Type = 'application/json'
-    And method Post
-    Then status 200
-    * def responseToken = response.code
-    And karate.set('tokenRegister', responseToken)
-    And karate.log('Token value:', karate.get('tokenRegister'))
-    * eval sleep(2000)
-
-    Given path '/api/auth/otp/sms/verify'
-    And def responseToken = karate.get('tokenRegister')
-    And karate.log('Token value:', karate.get('responseToken'))
-    And  request {"phone": "+573014147851", "code": "#(responseToken)"}
-    And method Post
-    Then status 200
-    * eval sleep(2000)
-    * def responseToken = response.token
-    And karate.set('tokenverify', responseToken)
-    And karate.log('Token value:', karate.get('tokenverify'))
 
     * def register_data = read('classpath:data/register_add.json')
     Given path '/api/auth/register'
